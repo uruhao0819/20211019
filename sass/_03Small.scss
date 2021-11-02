@@ -1,0 +1,14 @@
+header {
+    nav {
+        // 屬於 nav 寬度 %  ; 高度 px ; 背景色 ( 暫 )
+        width: $NW;
+        height: $NH;
+        background-color: rgb(202, 56, 56);
+
+        // 導覽列 : 只顯示 Logo 和 Menu，其餘不顯示
+        // css3集合語法，將共同的樣式一同編輯
+        #Portfolio, #About, #Project, #Contact {
+            // @extend %Dn;
+        }
+    }
+}
