@@ -1,14 +1,15 @@
 @charset "UTF-8";
 /* 樣式 */
 /* 對應 HTML5相同標籤或者呼叫 id (標籤自訂名稱-英文、數字和底線「_」；唯一) ；class (重複，共用樣式) */
-header {
-  width: 100%;
+* {
+margin: 0 auto;
+padding: 0;
+list-style-type: none;
 }
 
-main {
-  /* 寬度 高度 背景顏色 文字顏色 */
-  width: 50%;
-  background-color: burlywood;
-  color: #059e26;
+@media screen and (max-width: 576px;) {
+  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
+   display: none;
 }
-/*# sourceMappingURL=style.css.map */
+
+}

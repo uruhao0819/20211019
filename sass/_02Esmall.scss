@@ -1,0 +1,71 @@
+// scss 巢狀語法 : 呼叫元素選擇器 (標籤選擇器)
+// 轉譯後為 後代選擇器 header nav #Portfolio { ... }
+// scss 繼承
+// scss 變數 要計算的值或者常變動的值 $
+
+// 繼承區
+%Dn {
+    // 不顯示
+    display: none;
+}
+%Subnav {
+    // 寬度 與 文字顏色 尾頁次選單
+    width: 50%;
+    color: white;
+}
+
+header {
+    nav {
+        // 屬於 nav 寬度 %  ; 高度 px ; 背景色 ( 暫 )
+        width: $NW;
+        // height: $NH;
+        background-color: rosybrown;
+
+        // 指向清單物件 li
+        li {
+            // 將 Logo 與 選單 設定為 垂直排列 ( 一列 ) float
+            // float ( 浮點對齊 ) 缺點，會自動往上一階層 ( 新圖層 )，所以，父框架 ( 外框架 )，若沒有設定高度，系統將無視存在
+            // 解決方式一 : 父框架 ( 外框架 ) 設定高度 : 解決方式一 ; 解決方式二 : 清除 clear
+            float: left;
+            
+        }
+        // 商標
+        #Logo {
+            // 寬度 8 等份
+            width: $W1 * 8 + 5%;
+            // 文字尺寸，內縮，水平置中
+            font-size: $Trem *2;
+        }
+        // 選單
+        #Menu {
+            // 寬度 2 等份
+            width: $W1 + 5%;
+        }
+        .Clear {
+            clear: both;
+        }
+
+        // 導覽列 : 只顯示 Logo 和 Menu，其餘不顯示
+        // css3集合語法，將共同的樣式一同編輯
+        #Portfolio, #About, #Project, #Contact {
+            @extend %Dn;
+        }
+    }
+}
+
+footer {
+    nav {
+        #Graphic {
+            @extend %Subnav;
+            background-color: yellowgreen;
+        }
+        #Web {
+            @extend %Subnav;
+            background-color: steelblue;
+        }
+        #Audio {
+            @extend %Subnav;
+            background-color: sienna;
+        }
+    }
+}
