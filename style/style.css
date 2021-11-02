@@ -9,7 +9,50 @@ list-style-type: none;
 
 @media screen and (max-width: 576px;) {
   header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
-   display: none;
+    display: none;
+  }
+  footer nav #Graphic, footer nav #Web, footer nav #Audio {
+    width: 50%;
+    color: white;
+  }
+  header nav {
+    width: 100%;
+    background-color: rosybrown;
+  }
+  header nav li {
+    float: left;
+  }
+  footer nav #Logo {
+    width: 80%;
+  }
+  footer nav #Menu {
+    width: 20%;
+  }
+  header nav .Clear {
+    clear: both;
+  }
+  footer nav #Graphic {
+    background-color: yellowgreen;
+  }
+  footer nav #Web {
+    background-color: steelblue;
+  }
+  footer nav #Audio {
+    background-color: sienna;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  header nav {
+    width: 100%;
+    height: 65px;
+    background-color: #ca3838;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #main {
+    width: 100%;
+    background-color: yellowgreen;
+  }
 }
