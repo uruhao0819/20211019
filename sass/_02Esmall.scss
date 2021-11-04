@@ -49,6 +49,8 @@ header {
             // 文字水平 ( 行距 ) 、 垂直 ( 文字對齊 -- 置中 ) 置中
             text-align: center;
             line-height: 80px;
+            background-image: url(../../imagse/icon/000001.svg);
+            background-color: coral;
         }
         .Clear {
             clear: both;
