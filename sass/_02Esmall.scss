@@ -35,11 +35,17 @@ header {
             width: $W1 * 8 + 5%;
             // 文字尺寸，內縮，水平置中
             font-size: $Trem *2;
+            // 內縮 : 方法1，首行縮排 ( 單行文字 )
+            text-indent: 30px;
+            // 文字水平置中，行距設定 ( 父框架的高度 = 行距的數值 ) line-height: 80* 0.15 + px;
         }
         // 選單
         #Menu {
             // 寬度 2 等份
             width: $W1 + 5%;
+            img {
+                background-color: aqua;
+            }
         }
         .Clear {
             clear: both;
