@@ -18,7 +18,7 @@ header {
     nav {
         // 屬於 nav 寬度 %  ; 高度 px ; 背景色 ( 暫 )
         width: $NW;
-        // height: $NH;
+        height: 80px;
         background-color: rosybrown;
 
         // 指向清單物件 li
@@ -31,7 +31,7 @@ header {
         }
         // 商標
         #Logo {
-            // 寬度 8 等份
+            // 寬度 8.5 等份
             width: $W1 * 8 + 5%;
             // 文字尺寸，內縮，水平置中
             font-size: $Trem *2;
@@ -40,12 +40,14 @@ header {
             // 文字水平置中，行距設定 ( 父框架的高度 = 行距的數值 ) line-height: 80* 0.15 + px;
             // 方法1 父框架有高度時，父框架的高度 = 行距的數值 ; 方法2 文字尺寸的倍數 + 3
             line-height: $Trem * ( 2 + 3 );
+            background-color: burlywood;
         }
         // 選單
         #Menu {
-            // 寬度 2 等份
+            // 寬度 1.5 等份
             width: $W1 + 5%;
             img {
+                width: 80px;
                 background-color: aqua;
             }
         }
