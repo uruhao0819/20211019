@@ -46,10 +46,9 @@ header {
         #Menu {
             // 寬度 1.5 等份
             width: $W1 + 5%;
-            img {
-                width: 80px;
-                background-color: aqua;
-            }
+            // 文字水平 ( 行距 ) 、 垂直 ( 文字對齊 -- 置中 ) 置中
+            text-align: center;
+            line-height: 80px;
         }
         .Clear {
             clear: both;
