@@ -49,7 +49,16 @@ header {
             // 文字水平 ( 行距 ) 、 垂直 ( 文字對齊 -- 置中 ) 置中
             text-align: center;
             line-height: 80px;
+            // 將文字移至裝置之外
+            text-indent: -99999px;
+            // 背景圖片連結
             background-image: url(../../imagse/icon/000001.svg);
+            // 背景圖片對齊
+            background-position: center;
+            // 背景圖片取消重複顯示
+            background-repeat: no-repeat;
+            // 背景圖片尺寸 auto自動 cover符合框架的尺寸
+            background-size: cover;
             background-color: coral;
         }
         .Clear {
