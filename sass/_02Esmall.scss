@@ -17,7 +17,7 @@
 header {
     nav {
         // 設定 nav專用 ( 區域 ) 變數 ; vh 單位 ( 以裝置的高度 * 百分比計算，同時顯示框架的高度值 )
-        $NH: 7vh;
+        $NH: 7%;
         // 屬於 nav 寬度 %  ; 高度 px ; 背景色 ( 暫 )
         width: $NW;
         background-color: rosybrown;
