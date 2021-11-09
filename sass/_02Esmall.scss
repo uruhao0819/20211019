@@ -58,9 +58,8 @@ header {
             background-position: center;
             // 背景圖片取消重複顯示
             background-repeat: no-repeat;
-            // 背景圖片尺寸 auto自動 cover符合框架的尺寸
-            background-size: cover;
-            background-color: coral;
+            // 背景圖片尺寸 auto自動 cover符合框架的尺寸 contain
+            background-size: contain;
         }
         .Clear {
             clear: both;
