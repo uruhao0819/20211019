@@ -40,7 +40,7 @@ header {
             // 文字水平置中，行距設定 ( 父框架的高度 = 行距的數值 ) line-height: 80* 0.15 + px;
             // 方法1 父框架有高度時，父框架的高度 = 行距的數值 ; 方法2 文字尺寸的倍數 + 3
             // 5rem = 80px
-            line-height: $Tpx * ( 2 + 3 );
+            line-height: $NH;
             background-color: rgb(100, 93, 83);
         }
         // 選單
