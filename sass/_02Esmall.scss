@@ -62,9 +62,7 @@ header {
             // 背景圖片尺寸 auto自動 cover ( 背景圖片小於容器時，放大圖片製容器的大小並填滿 ; 背景圖片大於容器時，縮小圖片至容器的大小並填滿 ; 缺點，容器的長寬比例與背景圖片的長寬比例不合時，會出現背景圖片失真 ) contain ( 背景圖片大於容器時，縮小至容器內呈現，會留邊界 )
             background-size: contain;
         }
-        .Clear {
-            clear: both;
-        }
+
 
         // 導覽列 : 只顯示 Logo 和 Menu，其餘不顯示
         // css3集合語法，將共同的樣式一同編輯
@@ -72,6 +70,37 @@ header {
             @extend %Dn;
         }
     }
+
+    // 輪播圖片 超小與小裝置 100% X 375px
+    #BannerBox {
+        width: $W10;
+        height: 280px;
+        background-color: aquamarine;
+        ul {
+            width: $W10 * 5;
+            li {
+                width: $W10;
+                height: $BHsmall;
+                float: left;
+            }
+            .Box1 {
+                background-color: burlywood;
+            }
+            .Box2 {
+                background-color: chocolate;
+            }
+            .Box3 {
+                background-color: blueviolet;
+            }
+            .Box4 {
+                background-color: cornflowerblue;
+            }
+            .Box5 {
+                background-color: crimson;
+            }
+        }
+    }
+
 }
 
 footer {
