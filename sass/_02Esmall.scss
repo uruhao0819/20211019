@@ -3,17 +3,6 @@
 // scss 繼承
 // scss 變數 要計算的值或者常變動的值 $
 
-// 繼承區
-%Dn {
-    // 不顯示
-    display: none;
-}
-%Subnav {
-    // 寬度 與 文字顏色 尾頁次選單
-    width: 50%;
-    color: white;
-}
-
 header {
     nav {
         // 屬於 nav 寬度 %  ; 高度 px ; 背景色 ( 暫 )
@@ -67,7 +56,9 @@ header {
         // 導覽列 : 只顯示 Logo 和 Menu，其餘不顯示
         // css3集合語法，將共同的樣式一同編輯
         #Portfolio, #About, #Project, #Contact {
-            @extend %Dn;
+            // @extend %Dn;
+            // 呼叫 @mixin
+            @include DN;
         }
     }
 
@@ -109,17 +100,6 @@ header {
 
 footer {
     nav {
-        #Graphic {
-            @extend %Subnav;
-            background-color: yellowgreen;
-        }
-        #Web {
-            @extend %Subnav;
-            background-color: steelblue;
-        }
-        #Audio {
-            @extend %Subnav;
-            background-color: sienna;
-        }
+
     }
 }
