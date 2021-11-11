@@ -42,7 +42,7 @@ $W7:$W10 / 10 *7; // 寬度 7 等份
 $W8:$W10 / 10 *8; // 寬度 8 等份
 $W9:$W10 / 10 *9; // 寬度 9 等份
 
-// 繼承區
+// 繼承區 無法直接撰寫在共用區呼叫 ; 也無法與 mixin 混合函式共用
 %Dn {
     // 不顯示
     display: none;
@@ -51,4 +51,16 @@ $W9:$W10 / 10 *9; // 寬度 9 等份
 // mixin 混合函式
 @mixin DN {
     display: none;
+}
+
+// 背景圖片替代文字
+@mixin BgText($Bs) {
+    // 將文字移至裝置之外
+    text-indent: -99999px;
+     // 背景圖片對齊
+     background-position: center;
+     // 背景圖片取消重複顯示
+     background-repeat: no-repeat;
+     // 背景圖片尺寸 auto自動 cover ( 背景圖片小於容器時，放大圖片製容器的大小並填滿 ; 背景圖片大於容器時，縮小圖片至容器的大小並填滿 ; 缺點，容器的長寬比例與背景圖片的長寬比例不合時，會出現背景圖片失真 ) contain ( 背景圖片大於容器時，縮小至容器內呈現，會留邊界 )
+     background-size: $Bs;
 }
