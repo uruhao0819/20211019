@@ -11,6 +11,9 @@
 
     行距  文字，百分比的單位 em ( 子物件的設定值會疊加父物件的設定值 ) 和rem ( 不受父物件設定值影響 )
 */
+// 匯入檔案 需在所有設定之前
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
 * {
     // 頁面與物件邊界，設定水平置中
     // 4個值為 : 上 右 下 左  ; 2個值為 : 上下 左右
@@ -19,6 +22,8 @@
     padding: 0;
     // 隱藏項目符號
     list-style-type: none;
+    // 字型
+    font-family: 'cwTeXYen', sans-serif,'微軟正黑體';
 }
 // 圖片等比設定
 img {
