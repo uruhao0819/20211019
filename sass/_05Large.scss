@@ -5,39 +5,36 @@ header {
         // height: $NH;
         background-color: rosybrown;
 
-        // 指向清單物件 li
-        li {
-            // 將 Logo 與 選單 設定為 垂直排列 ( 一列 ) float
-            // float ( 浮點對齊 ) 缺點，會自動往上一階層 ( 新圖層 )，所以，父框架 ( 外框架 )，若沒有設定高度，系統將無視存在
-            // 解決方式一 : 父框架 ( 外框架 ) 設定高度 : 解決方式一 ; 解決方式二 : 清除 clear
-            // float: left;
-            
+        // 顯示方式 : 彈性布局 要排列物的父框架
+        display: flex;
+
         }
         // 商標
         #Logo {
-            // 寬度 8.5 等份
-            // width: $W1 * 8 + 5%;
-            // 文字尺寸，內縮，水平置中
-            font-size: $Tpx *2;
-            // 內縮 : 方法1，首行縮排 ( 單行文字 )
-            text-indent: 30px;
-            // 文字水平置中，行距設定 ( 父框架的高度 = 行距的數值 ) line-height: 80* 0.15 + px;
-            // 方法1 父框架有高度時，父框架的高度 = 行距的數值 ; 方法2 文字尺寸的倍數 + 3
-            // 5rem = 80px
-            line-height: $NH;
-            background-color: rgb(100, 93, 83);
-        }
-        // 選單
-        #Menu {
-            @include DN;
+            // 寬度
+            width: $W1 * 3;
+            // 水平置中
+            text-align: center
+            // 文字尺寸 em
+            font-size; $Trem * 2.5;
+            // 清除小裝置設定 首行縮排
+            text-indent: 0;
+            background-color: white;
         }
 
+        // 按鈕共用值 li
+        li {
+            width:  ($W10 - 30%) / 4;
+        }
 
-        // 導覽列 : 只顯示 Logo 和 Menu，其餘不顯示
-        // css3集合語法，將共同的樣式一同編輯
         #Portfolio, #About, #Project, #Contact {
             // 小裝置為關閉，需再次開啟才可以看到資料
             @include ON;
+        }
+
+            // 選單
+        #Menu {
+            @include DN;
         }
     }
 
