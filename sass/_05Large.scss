@@ -36,6 +36,8 @@ header {
         // 導覽列 : 只顯示 Logo 和 Menu，其餘不顯示
         // css3集合語法，將共同的樣式一同編輯
         #Portfolio, #About, #Project, #Contact {
+            // 小裝置為關閉，需再次開啟才可以看到資料
+            @include ON;
         }
     }
 
