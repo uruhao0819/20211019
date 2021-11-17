@@ -3,17 +3,6 @@
 // scss 繼承
 // scss 變數 要計算的值或者常變動的值 $
 
-// 繼承區
-%Dn {
-    // 不顯示
-    display: none;
-    }
-    %subnav{
-      // 寬度 與文字顏色 頁尾次選單
-      width: 50%;
-      color:white;
-    }
-
 header {
     nav {
         // 屬於 nav 寬度 %  ; 高度 px ; 背景色 ( 暫 )
@@ -71,7 +60,7 @@ header {
     #BannerBox {
         width: $W10;
         height: $BHsmall;
-        // 超出範圍設定，能滑動X軸，讓圖片在框架中左右滑動
+        // 超出範圍設定
         overflow-x: auto;
         background-color: aquamarine;
         ul {

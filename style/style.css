@@ -7,55 +7,46 @@ padding: 0;
 list-style-type: none;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 @media screen and (max-width: 576px) {
+  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
+    display: none;
+  }
+  footer nav #Graphic, footer nav #Web, footer nav #Audio {
+    width: 50%;
+    color: white;
+  }
   header nav {
     width: 100%;
-    background-color: #ca3838;
+    background-color: rosybrown;
   }
   header nav li {
     float: left;
   }
-  header nav #Logo {
-    width: 85%;
-    font-size: 32px;
-    text-indent: 30px;
-    line-height: 65PX;
-    background-color: blanchedalmond;
+  footer nav #Logo {
+    width: 80%;
   }
-  header nav #Menu {
-    width: 15%;
-    text-align: center;
-    line-height: 65PX;
-    text-indent: -9999px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../../image/icon/000001.svg);
+  footer nav #Menu {
+    width: 20%;
   }
   header nav .Clear {
     clear: both;
   }
-  header nav #Protfolio, header nav #About, header nav #Project, header nav #Contact {
-    display: none;
+  footer nav #Graphic {
+    background-color: yellowgreen;
   }
-  header #Bannerbox {
+  footer nav #Web {
+    background-color: steelblue;
+  }
+  footer nav #Audio {
+    background-color: sienna;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header nav {
     width: 100%;
-    height: 280px;
-    overflow-x: auto;
-    background-color: cadetblue;
-  }
-  header #BannerBox ul {
-    width: 500%;
-  }
-  header #BannerBox ul li {
-    width: 100vw;
-    height: 280px;
-    float: left;
+    height: 65px;
+    background-color: #ca3838;
   }
 }
 
@@ -64,66 +55,4 @@ img {
     width: 100%;
     background-color: yellowgreen;
   }
-  header nav li {
-    float: left;
-  }
-  header nav #Logo {
-    width: 90%;
-    font-size: 32px;
-    text-align: center;
-    line-height: 65PX;
-    background-color: blanchedalmond;
-  }
-  header nav #Menu {
-    width: 10%;
-    text-align: center;
-    line-height: 65PX;
-    text-indent: -9999px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../../image/icon/0001.svg);
-  }
-  header nav .Clear {
-    clear: both;
-  }
-  header nav #Protfolio, header nav #About, header nav #Project, header nav #Contact {
-    display: none;
-  }
-  header #BannerBox {
-    width: 500%;
-    height: 280px;
-    overflow-x: auto;
-    background-color: cadetblue;
-  }
-  header #BannerBox ul {
-    width: 500%;
-  }
-  header #BannerBox ul li {
-    width: 100vw;
-    height: 280px;
-    float: left;
-  }
 }
-
-@media screen and (min-width: 992px) {
-  #main {
-    width: 85%;
-    background-color: lightslategrey;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  #main {
-    width: 90%;
-    background-color: magenta;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  #main {
-    width: 100%;
-    background-color: midnightblue;
-  }
-}
-/*# sourceMappingURL=style.css.map */

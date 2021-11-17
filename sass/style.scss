@@ -1,11 +1,10 @@
 /* 樣式 */
     /* 對應 HTML5相同標籤或者呼叫 id (標籤自訂名稱-英文、數字和底線「_」；唯一) ；class (重複，共用樣式) */
     
-@import '_01Joint.scss';
+@import '_01Joint.scss'
 
 
 // css 呼叫 id : 輸入 #name
-// css 呼叫 class :輸入 .name
 
 // 加入判斷裝置的斷點
 // 超小裝置 <576px max-width ( 最大寬度 )
