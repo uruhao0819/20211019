@@ -3,6 +3,17 @@
 // scss 繼承
 // scss 變數 要計算的值或者常變動的值 $
 
+// 繼承區
+%Dn {
+    // 不顯示
+    display: none;
+    }
+    %subnav{
+      // 寬度 與文字顏色 頁尾次選單
+      width: 50%;
+      color:white;
+    }
+
 header {
     nav {
         // 屬於 nav 寬度 %  ; 高度 px ; 背景色 ( 暫 )
