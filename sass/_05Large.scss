@@ -16,7 +16,7 @@ header {
             // 水平置中
             text-align: center
             // 文字尺寸 rem
-            font-size; $Trem * 2;
+            font-size: $Trem * 2;
             // 清除小裝置設定 首行縮排
             text-indent: 0;
             background-color: white;
@@ -79,8 +79,19 @@ header {
 
 }
 
+#main {
+    article {
+        width: $W10;
+        height: 400px;
+        // 框線 線段粗細 線段樣式 線段顏色
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: tomato;
+    }
+}
+
 footer {
     nav {
-
+        
     }
 }
