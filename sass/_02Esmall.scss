@@ -4,95 +4,102 @@
 // scss 變數 要計算的值或者常變動的值 $
 
 header {
-    nav {
-        // 屬於 nav 寬度 %  ; 高度 px ; 背景色 ( 暫 )
-        width: $NW;
-        height: $NH;
-        background-color: rosybrown;
+	nav {
+		// 屬於 nav 寬度 %  ; 高度 px ; 背景色 ( 暫 )
+		width: $NW;
+		height: $NH;
+		background-color: rosybrown;
 
-        // 指向清單物件 li
-        li {
-            // 將 Logo 與 選單 設定為 垂直排列 ( 一列 ) float
-            // float ( 浮點對齊 ) 缺點，會自動往上一階層 ( 新圖層 )，所以，父框架 ( 外框架 )，若沒有設定高度，系統將無視存在
-            // 解決方式一 : 父框架 ( 外框架 ) 設定高度 : 解決方式一 ; 解決方式二 : 清除 clear
-            float: left;
-            
-        }
-        // 商標
-        #Logo {
-            // 寬度 8.5 等份
-            width: $W1 * 8 + 5%;
-            // 文字尺寸，內縮，水平置中
-            font-size: $Tpx *2;
-            // 內縮 : 方法1，首行縮排 ( 單行文字 )
-            text-indent: 30px;
-            // 文字水平置中，行距設定 ( 父框架的高度 = 行距的數值 ) line-height: 80* 0.15 + px;
-            // 方法1 父框架有高度時，父框架的高度 = 行距的數值 ; 方法2 文字尺寸的倍數 + 3
-            // 5rem = 80px
-            line-height: $NH;
-            background-color: rgb(100, 93, 83);
-        }
-        // 選單
-        #Menu {
-            // 寬度 1.5 等份
-            width: $W1 + 5%;
-            // height: 100%;
-            // 文字水平 ( 行距 ) 、 垂直 ( 文字對齊 -- 置中 ) 置中
-            text-align: center;
-            line-height: $NH;
-            @include BgText(contain);
-            // 背景圖片連結
-            background-image: url(../../imagse/icon/000001.svg);
-        }
+		// 指向清單物件 li
+		li {
+			// 將 Logo 與 選單 設定為 垂直排列 ( 一列 ) float
+			// float ( 浮點對齊 ) 缺點，會自動往上一階層 ( 新圖層 )，所以，父框架 ( 外框架 )，若沒有設定高度，系統將無視存在
+			// 解決方式一 : 父框架 ( 外框架 ) 設定高度 : 解決方式一 ; 解決方式二 : 清除 clear
+			float: left;
+		}
+		// 商標
+		#Logo {
+			// 寬度 8.5 等份
+			width: $W1 * 8 + 5%;
+			// 文字尺寸，內縮，水平置中
+			font-size: $Tpx * 2;
+			// 內縮 : 方法1，首行縮排 ( 單行文字 )
+			text-indent: 30px;
+			// 文字水平置中，行距設定 ( 父框架的高度 = 行距的數值 ) line-height: 80* 0.15 + px;
+			// 方法1 父框架有高度時，父框架的高度 = 行距的數值 ; 方法2 文字尺寸的倍數 + 3
+			// 5rem = 80px
+			line-height: $NH;
+			background-color: rgb(100, 93, 83);
+		}
+		// 選單
+		#Menu {
+			// 寬度 1.5 等份
+			width: $W1 + 5%;
+			// height: 100%;
+			// 文字水平 ( 行距 ) 、 垂直 ( 文字對齊 -- 置中 ) 置中
+			text-align: center;
+			line-height: $NH;
+			@include BgText(contain);
+			// 背景圖片連結
+			background-image: url(../../imagse/icon/000001.svg);
+		}
 
+		// 手機板的導覽列
+		#MobileNav {
+			width: $W1 * 10;
+			// 高度單位 vh (裝置可視高度)
+			height: 100vh;
+			background-color: tomato;
+		}
 
-        // 導覽列 : 只顯示 Logo 和 Menu，其餘不顯示
-        // css3集合語法，將共同的樣式一同編輯
-        #Portfolio, #About, #Project, #Contact {
-            // @extend %Dn;
-            // 呼叫 @mixin
-            @include DN;
-        }
-    }
+		// 導覽列 : 只顯示 Logo 和 Menu，其餘不顯示
+		// css3集合語法，將共同的樣式一同編輯
+		#Portfolio,
+		#About,
+		#Project,
+		#Contact {
+			// @extend %Dn;
+			// 呼叫 @mixin
+			@include DN;
+		}
+	}
 
-    // 輪播圖片 超小與小裝置 100% X 280px ( 圖片以大尺寸 1920 x600 為基礎計算 )
-    // vw ( 以裝置的寬度為寬度 ) vh ( 以裝置高度為高度 )
-    #BannerBox {
-        width: $W10;
-        height: $BHsmall;
-        // 超出範圍設定
-        overflow-x: auto;
-        background-color: aquamarine;
-        ul {
-            // 圖片框的寬度尺寸
-            width: $W10 * 5;
-            li {
-                width: 100vw;
-                height: $BHsmall;
-                float: left;
-            }
-            .Box1 {
-                background-color: burlywood;
-            }
-            .Box2 {
-                background-color: chocolate;
-            }
-            .Box3 {
-                background-color: blueviolet;
-            }
-            .Box4 {
-                background-color: cornflowerblue;
-            }
-            .Box5 {
-                background-color: crimson;
-            }
-        }
-    }
-
+	// 輪播圖片 超小與小裝置 100% X 280px ( 圖片以大尺寸 1920 x600 為基礎計算 )
+	// vw ( 以裝置的寬度為寬度 ) vh ( 以裝置高度為高度 )
+	#BannerBox {
+		width: $W10;
+		height: $BHsmall;
+		// 超出範圍設定
+		overflow-x: auto;
+		background-color: aquamarine;
+		ul {
+			// 圖片框的寬度尺寸
+			width: $W10 * 5;
+			li {
+				width: 100vw;
+				height: $BHsmall;
+				float: left;
+			}
+			.Box1 {
+				background-color: burlywood;
+			}
+			.Box2 {
+				background-color: chocolate;
+			}
+			.Box3 {
+				background-color: blueviolet;
+			}
+			.Box4 {
+				background-color: cornflowerblue;
+			}
+			.Box5 {
+				background-color: crimson;
+			}
+		}
+	}
 }
 
 footer {
-    nav {
-
-    }
+	nav {
+	}
 }
