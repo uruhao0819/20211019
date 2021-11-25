@@ -1,41 +1,45 @@
 header {
 	nav {
-		// 屬於 nav 寬度 %  ; 高度 px ; 背景色 ( 暫 )
-		width: $NW;
-		height: $NH;
-		background-color: rgb(116, 15, 15);
+		// // 屬於 nav 寬度 %  ; 高度 px ; 背景色 ( 暫 )
+		// width: $NW;
+		// height: $NH;
+		// background-color: rgb(116, 15, 15);
 
-		// 指向清單物件 li
-		li {
-			// 將 Logo 與 選單 設定為 垂直排列 ( 一列 ) float
-			// float ( 浮點對齊 ) 缺點，會自動往上一階層 ( 新圖層 )，所以，父框架 ( 外框架 )，若沒有設定高度，系統將無視存在
-			// 解決方式一 : 父框架 ( 外框架 ) 設定高度 : 解決方式一 ; 解決方式二 : 清除 clear
-			float: left;
-		}
+		// // 指向清單物件 li
+		// li {
+		// 	// 將 Logo 與 選單 設定為 垂直排列 ( 一列 ) float
+		// 	// float ( 浮點對齊 ) 缺點，會自動往上一階層 ( 新圖層 )，所以，父框架 ( 外框架 )，若沒有設定高度，系統將無視存在
+		// 	// 解決方式一 : 父框架 ( 外框架 ) 設定高度 : 解決方式一 ; 解決方式二 : 清除 clear
+		// 	float: left;
+		// }
+
 		// 商標
 		#Logo {
-			// 寬度 9 等份
-			width: $W1 * 9;
-			// 文字尺寸，內縮，水平置中
-			font-size: $Tpx * 2;
+			// // 寬度 9 等份
+			// width: $W1 * 9;
+			// // 文字尺寸，內縮，水平置中
+			// font-size: $Tpx * 2;
 			// 文字垂直置中
 			line-height: center;
-			// 文字水平置中，行距設定 ( 父框架的高度 = 行距的數值 ) line-height: 80* 0.15 + px;
-			line-height: $NH;
-			background-color: rgb(100, 93, 83);
+			// // 文字水平置中，行距設定 ( 父框架的高度 = 行距的數值 ) line-height: 80* 0.15 + px;
+			// line-height: $NH;
+			// background-color: rgb(100, 93, 83);
+			// 不內縮
+			text-indent: 0;
 		}
-		// 選單
-		#Menu {
-			// 寬度 1 等份
-			width: $W1;
-			// height: 100%;
-			// 文字水平 ( 行距 ) 、 垂直 ( 文字對齊 -- 置中 ) 置中
-			text-align: center;
-			line-height: $NH;
-			@include BgText(contain);
-			// 背景圖片連結
-			background-image: url(../../imagse/icon/000001.svg);
-		}
+
+		// // 選單
+		// #Menu {
+		// 	// 寬度 1 等份
+		// 	width: $W1;
+		// 	// height: 100%;
+		// 	// 文字水平 ( 行距 ) 、 垂直 ( 文字對齊 -- 置中 ) 置中
+		// 	text-align: center;
+		// 	line-height: $NH;
+		// 	@include BgText(contain);
+		// 	// 背景圖片連結
+		// 	background-image: url(../../images/icon/000001.svg);
+		// }
 
 		// 導覽列 : 只顯示 Logo 和 Menu，其餘不顯示
 		// css3集合語法，將共同的樣式一同編輯
