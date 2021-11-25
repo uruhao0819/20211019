@@ -1,20 +1,35 @@
 @charset "UTF-8";
 /* 樣式 */
 /* 對應 HTML5相同標籤或者呼叫 id (標籤自訂名稱-英文、數字和底線「_」；唯一) ；class (重複，共用樣式) */
+/*
+    網頁使用的單位
+    寬度  高度  行距  文字  物件的距離 ( 外間距與內間距 ) ，只要能計算的值，都有單位
+    基礎單位  像素 ( px )
+    響應式網頁的單位 百分比 ( % ) vw與vh ( 裝置可視寬度與高度，新單位 )
+
+    1.百分比 ( % ) 的缺點，高度無法顯示
+    2.vw與vh 的缺點，舊瀏覽器 ( ie ) 不支援 ; mac瀏覽器 ( s )，因為手機版需要扣除瀏覽器自帶的功能按鈕 ( 在畫面下方 )
+
+    行距  文字，百分比的單位 em ( 子物件的設定值會疊加父物件的設定值 ) 和rem ( 不受父物件設定值影響 )
+*/
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 * {
-margin: 0 auto;
-padding: 0;
-list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  font-family: "cwTeXYen", sans-serif, "微軟正黑體";
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.Clear {
+  clear: both;
 }
 
 @media screen and (max-width: 576px) {
-  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
-    display: none;
-  }
-  footer nav #Graphic, footer nav #Web, footer nav #Audio {
-    width: 50%;
-    color: white;
-  }
   header nav {
     width: 100%;
     background-color: rosybrown;
@@ -22,23 +37,125 @@ list-style-type: none;
   header nav li {
     float: left;
   }
-  footer nav #Logo {
-    width: 80%;
+  header nav #Logo {
+    width: 85%;
+    font-size: 32px;
+    text-indent: 30px;
+    line-height: 65px;
+    background-color: #645d53;
   }
-  footer nav #Menu {
-    width: 20%;
+  header nav #Menu {
+    width: 15%;
+    text-align: center;
+    line-height: 65px;
+    text-indent: -99999px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../imagse/icon/000001.svg);
   }
-  header nav .Clear {
-    clear: both;
+  header nav #Portfolio,
+  header nav #About,
+  header nav #Project,
+  header nav #Contact {
+    display: none;
   }
-  footer nav #Graphic {
-    background-color: yellowgreen;
+  header #MobileNav {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    background-color: #b4566e;
   }
-  footer nav #Web {
-    background-color: steelblue;
+  header #BannerBox {
+    width: 100%;
+    height: 280px;
+    overflow-x: auto;
+    background-color: aquamarine;
   }
-  footer nav #Audio {
-    background-color: sienna;
+  header #BannerBox ul {
+    width: 500%;
+  }
+  header #BannerBox ul li {
+    width: 100vw;
+    height: 280px;
+    float: left;
+  }
+  header #BannerBox ul .Box1 {
+    background-color: burlywood;
+  }
+  header #BannerBox ul .Box2 {
+    background-color: chocolate;
+  }
+  header #BannerBox ul .Box3 {
+    background-color: blueviolet;
+  }
+  header #BannerBox ul .Box4 {
+    background-color: cornflowerblue;
+  }
+  header #BannerBox ul .Box5 {
+    background-color: crimson;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  header nav {
+    width: 100%;
+    height: 65px;
+    background-color: rosybrown;
+  }
+  header nav li {
+    float: left;
+  }
+  header nav #Logo {
+    width: 90%;
+    font-size: 32px;
+    text-indent: 30px;
+    line-height: 65px;
+    background-color: #645d53;
+  }
+  header nav #Menu {
+    width: 10%;
+    text-align: center;
+    line-height: 65px;
+    text-indent: -99999px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../imagse/icon/000001.svg);
+  }
+  header nav #Portfolio, header nav #About, header nav #Project, header nav #Contact {
+    display: none;
+  }
+  header #BannerBox {
+    width: 100%;
+    height: 280px;
+    overflow-x: auto;
+    background-color: aquamarine;
+  }
+  header #BannerBox ul {
+    width: 500%;
+  }
+  header #BannerBox ul li {
+    width: 100vw;
+    height: 280px;
+    float: left;
+  }
+  header #BannerBox ul .Box1 {
+    background-color: burlywood;
+  }
+  header #BannerBox ul .Box2 {
+    background-color: chocolate;
+  }
+  header #BannerBox ul .Box3 {
+    background-color: blueviolet;
+  }
+  header #BannerBox ul .Box4 {
+    background-color: cornflowerblue;
+  }
+  header #BannerBox ul .Box5 {
+    background-color: crimson;
   }
 }
 
@@ -46,13 +163,264 @@ list-style-type: none;
   header nav {
     width: 100%;
     height: 65px;
-    background-color: #ca3838;
+    background-color: #740f0f;
+  }
+  header nav li {
+    float: left;
+  }
+  header nav #Logo {
+    width: 90%;
+    font-size: 32px;
+    line-height: center;
+    line-height: 65px;
+    background-color: #645d53;
+  }
+  header nav #Menu {
+    width: 10%;
+    text-align: center;
+    line-height: 65px;
+    text-indent: -99999px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../imagse/icon/000001.svg);
+  }
+  header nav #Portfolio,
+  header nav #About,
+  header nav #Project,
+  header nav #Contact {
+    display: none;
+  }
+  header #BannerBox {
+    width: 100%;
+    height: 280px;
+    overflow-x: auto;
+    background-color: aquamarine;
+  }
+  header #BannerBox ul {
+    width: 500%;
+  }
+  header #BannerBox ul li {
+    width: 100vw;
+    height: 280px;
+    float: left;
+  }
+  header #BannerBox ul .Box1 {
+    background-color: burlywood;
+  }
+  header #BannerBox ul .Box2 {
+    background-color: chocolate;
+  }
+  header #BannerBox ul .Box3 {
+    background-color: blueviolet;
+  }
+  header #BannerBox ul .Box4 {
+    background-color: cornflowerblue;
+  }
+  header #BannerBox ul .Box5 {
+    background-color: crimson;
   }
 }
 
-@media screen and (min-width: 768px) {
-  #main {
+@media screen and (min-width: 992px) {
+  header nav {
     width: 100%;
-    background-color: yellowgreen;
+    background-color: rosybrown;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav #Logo {
+    width: 30%;
+  }
+  header nav li {
+    width: 17.5%;
+  }
+  header nav #Logo {
+    text-align: center;
+    font-size: 2rem;
+    text-indent: 0;
+    background-color: white;
+  }
+  header nav li {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 4.3rem;
+  }
+  header nav #Portfolio,
+  header nav #About,
+  header nav #Project,
+  header nav #Contact {
+    display: block;
+  }
+  header nav #Menu {
+    display: none;
+  }
+  header #BannerBox {
+    width: 100%;
+    height: 280px;
+    overflow-x: auto;
+    background-color: aquamarine;
+  }
+  header #BannerBox ul {
+    width: 500%;
+  }
+  header #BannerBox ul li {
+    width: 100vw;
+    height: 280px;
+    float: left;
+  }
+  header #BannerBox ul .Box1 {
+    background-color: burlywood;
+  }
+  header #BannerBox ul .Box2 {
+    background-color: chocolate;
+  }
+  header #BannerBox ul .Box3 {
+    background-color: blueviolet;
+  }
+  header #BannerBox ul .Box4 {
+    background-color: cornflowerblue;
+  }
+  header #BannerBox ul .Box5 {
+    background-color: crimson;
+  }
+  #main article {
+    width: 100%;
+    height: 400px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: tomato;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  header nav {
+    width: 100%;
+    background-color: #55944f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav #Logo {
+    width: 25%;
+  }
+  header nav li {
+    width: 18.75%;
+  }
+  header nav #Logo {
+    text-align: center;
+    font-size: 2.5rem;
+    text-indent: 0;
+    background-color: #d2ff96;
+  }
+  header nav li {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 4.8rem;
+  }
+  header nav #Portfolio,
+  header nav #About,
+  header nav #Project,
+  header nav #Contact {
+    display: block;
+  }
+  header nav #Menu {
+    display: none;
+  }
+  header #BannerBox {
+    width: 100%;
+    height: 280px;
+    overflow-x: auto;
+    background-color: aquamarine;
+  }
+  header #BannerBox ul {
+    width: 500%;
+  }
+  header #BannerBox ul li {
+    width: 100vw;
+    height: 280px;
+    float: left;
+  }
+  header #BannerBox ul .Box1 {
+    background-color: burlywood;
+  }
+  header #BannerBox ul .Box2 {
+    background-color: chocolate;
+  }
+  header #BannerBox ul .Box3 {
+    background-color: blueviolet;
+  }
+  header #BannerBox ul .Box4 {
+    background-color: cornflowerblue;
+  }
+  header #BannerBox ul .Box5 {
+    background-color: crimson;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  header nav {
+    width: 100%;
+    background-color: #55944f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav #Logo {
+    width: 25%;
+  }
+  header nav li {
+    width: 18.75%;
+  }
+  header nav #Logo {
+    text-align: center;
+    font-size: 2.5rem;
+    text-indent: 0;
+    background-color: #96eaff;
+  }
+  header nav li {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 4.5rem;
+  }
+  header nav #Portfolio,
+  header nav #About,
+  header nav #Project,
+  header nav #Contact {
+    display: block;
+  }
+  header nav #Menu {
+    display: none;
+  }
+  header #BannerBox {
+    width: 100%;
+    height: 280px;
+    overflow-x: auto;
+    background-color: aquamarine;
+  }
+  header #BannerBox ul {
+    width: 500%;
+  }
+  header #BannerBox ul li {
+    width: 100vw;
+    height: 280px;
+    float: left;
+  }
+  header #BannerBox ul .Box1 {
+    background-color: burlywood;
+  }
+  header #BannerBox ul .Box2 {
+    background-color: chocolate;
+  }
+  header #BannerBox ul .Box3 {
+    background-color: blueviolet;
+  }
+  header #BannerBox ul .Box4 {
+    background-color: cornflowerblue;
+  }
+  header #BannerBox ul .Box5 {
+    background-color: crimson;
+  }
+}
+/*# sourceMappingURL=style.css.map */
