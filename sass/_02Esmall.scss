@@ -42,7 +42,7 @@ header {
 			line-height: $NH;
 			@include BgText(contain);
 			// 背景圖片連結
-			background-image: url(../../imagse/icon/000001.svg);
+			background-image: url(../../images/icon/000001.svg);
 		}
 
 		// 導覽列 : 只顯示 Logo 和 Menu，其餘不顯示
