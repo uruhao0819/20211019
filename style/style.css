@@ -50,9 +50,9 @@ a:hover {
   header nav #Logo {
     width: 85%;
     font-size: 32px;
-    text-indent: 30px;
     line-height: 65px;
     background-color: #645d53;
+    text-align: center;
   }
   header nav #Menu {
     width: 15%;
@@ -106,6 +106,41 @@ a:hover {
   }
   header #BannerBox ul .Box5 {
     background-color: crimson;
+  }
+  footer .HRLine {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  footer nav {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer #Graphic {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  footer .LeftLine {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  footer #Web {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer .RightLine {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  footer #Audio {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
 }
 
@@ -255,7 +290,7 @@ a:hover {
   }
   header #BannerBox {
     width: 100%;
-    height: 280px;
+    padding-bottom: 40vh;
     overflow-x: auto;
     background-color: aquamarine;
   }
@@ -264,7 +299,6 @@ a:hover {
   }
   header #BannerBox ul li {
     width: 100vw;
-    height: 280px;
     float: left;
   }
   header #BannerBox ul .Box1 {
@@ -325,35 +359,6 @@ a:hover {
   header nav #Menu {
     display: none;
   }
-  header #BannerBox {
-    width: 100%;
-    height: 280px;
-    overflow-x: auto;
-    background-color: aquamarine;
-  }
-  header #BannerBox ul {
-    width: 500%;
-  }
-  header #BannerBox ul li {
-    width: 100vw;
-    height: 280px;
-    float: left;
-  }
-  header #BannerBox ul .Box1 {
-    background-color: burlywood;
-  }
-  header #BannerBox ul .Box2 {
-    background-color: chocolate;
-  }
-  header #BannerBox ul .Box3 {
-    background-color: blueviolet;
-  }
-  header #BannerBox ul .Box4 {
-    background-color: cornflowerblue;
-  }
-  header #BannerBox ul .Box5 {
-    background-color: crimson;
-  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -389,35 +394,6 @@ a:hover {
   }
   header nav #Menu {
     display: none;
-  }
-  header #BannerBox {
-    width: 100%;
-    height: 280px;
-    overflow-x: auto;
-    background-color: aquamarine;
-  }
-  header #BannerBox ul {
-    width: 500%;
-  }
-  header #BannerBox ul li {
-    width: 100vw;
-    height: 280px;
-    float: left;
-  }
-  header #BannerBox ul .Box1 {
-    background-color: burlywood;
-  }
-  header #BannerBox ul .Box2 {
-    background-color: chocolate;
-  }
-  header #BannerBox ul .Box3 {
-    background-color: blueviolet;
-  }
-  header #BannerBox ul .Box4 {
-    background-color: cornflowerblue;
-  }
-  header #BannerBox ul .Box5 {
-    background-color: crimson;
   }
 }
 /*# sourceMappingURL=style.css.map */
