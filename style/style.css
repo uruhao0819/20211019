@@ -29,6 +29,16 @@ img {
   clear: both;
 }
 
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+a:hover {
+  color: cadetblue;
+  font-weight: 650;
+}
+
 @media screen and (max-width: 576px) {
   header nav {
     width: 100%;
