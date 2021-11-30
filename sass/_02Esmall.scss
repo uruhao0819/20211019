@@ -135,4 +135,25 @@ footer {
 	#Audio {
 		order: 5;
 	}
+
+	address {
+		width: $W1 * 4;
+		// 彈性佈局
+		display: flex;
+		// 上邊界 nav 與 address 的距離
+		margin: {
+			top: 10px;
+			bottom: 20px;
+		}
+	}
+
+	h6 {
+		// 文字置中
+		text-align: center;
+		// 文字尺寸
+		font-size: $Trem * 0.8;
+		// 文字粗細
+		font-weight: 200;
+		background-color: coral;
+	}
 }
