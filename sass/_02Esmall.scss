@@ -119,4 +119,20 @@ footer {
 		// 彈性佈局 設定方式 : 設定在要排列物件的父框架
 		display: flex;
 	}
+	// 彈性佈局 order 重新設定排列順序
+	#Graphic {
+		order: 3;
+	}
+	.LeftLine {
+		order: 2;
+	}
+	#Web {
+		order: 1;
+	}
+	.RightLine {
+		order: 4;
+	}
+	#Audio {
+		order: 5;
+	}
 }
