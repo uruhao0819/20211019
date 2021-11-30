@@ -115,5 +115,8 @@ footer {
 		}
 	}
 	nav {
+		width: $W1 * 8;
+		// 彈性佈局 設定方式 : 設定在要排列物件的父框架
+		display: flex;
 	}
 }
