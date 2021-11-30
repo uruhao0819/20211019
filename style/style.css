@@ -92,21 +92,6 @@ a:hover {
     height: 280px;
     float: left;
   }
-  header #BannerBox ul .Box1 {
-    background-color: burlywood;
-  }
-  header #BannerBox ul .Box2 {
-    background-color: chocolate;
-  }
-  header #BannerBox ul .Box3 {
-    background-color: blueviolet;
-  }
-  header #BannerBox ul .Box4 {
-    background-color: cornflowerblue;
-  }
-  header #BannerBox ul .Box5 {
-    background-color: crimson;
-  }
   footer .HRLine {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -323,21 +308,6 @@ a:hover {
   header #BannerBox ul li {
     width: 100vw;
     float: left;
-  }
-  header #BannerBox ul .Box1 {
-    background-color: burlywood;
-  }
-  header #BannerBox ul .Box2 {
-    background-color: chocolate;
-  }
-  header #BannerBox ul .Box3 {
-    background-color: blueviolet;
-  }
-  header #BannerBox ul .Box4 {
-    background-color: cornflowerblue;
-  }
-  header #BannerBox ul .Box5 {
-    background-color: crimson;
   }
   #main article {
     width: 100%;
