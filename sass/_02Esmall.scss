@@ -137,13 +137,20 @@ footer {
 	}
 
 	address {
-		width: $W1 * 4;
+		width: $W1 * 5;
 		// 彈性佈局
 		display: flex;
 		// 上邊界 nav 與 address 的距離
 		margin: {
 			top: 10px;
 			bottom: 20px;
+		}
+
+		.Line {
+			width: $W1 * 2;
+			height: 30px;
+			background-image: url(../../images/icon/LINE_Brand_icon.png);
+			@include BgText(contain);
 		}
 	}
 
