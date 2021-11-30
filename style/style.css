@@ -143,12 +143,21 @@ a:hover {
             order: 5;
   }
   footer address {
-    width: 40%;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+  footer address .Line {
+    width: 20%;
+    height: 30px;
+    background-image: url(../../images/icon/LINE_Brand_icon.png);
+    text-indent: -99999px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   footer h6 {
     text-align: center;
