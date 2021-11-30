@@ -149,8 +149,7 @@ footer {
 		.Line {
 			width: $W1 * 2;
 			height: 30px;
-			background-image: url(../../images/icon/LINE_Brand_icon.png);
-			@include BgText(contain);
+			@include BG(icon, "000002.svg", contain);
 		}
 	}
 
