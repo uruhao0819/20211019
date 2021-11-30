@@ -35,6 +35,18 @@ img {
 .Clear {
 	clear: both;
 }
+a {
+	// 隱藏連結樣式底線
+	text-decoration: none;
+	// 文字顏色
+	color: brown;
+}
+a:hover {
+	// 文字顏色
+	color: cadetblue;
+	// 文字加粗
+	font-weight: 650;
+}
 
 // 變數區
 $W10: 100%;
