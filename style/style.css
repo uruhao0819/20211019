@@ -201,21 +201,6 @@ a:hover {
     height: 280px;
     float: left;
   }
-  header #BannerBox ul .Box1 {
-    background-color: burlywood;
-  }
-  header #BannerBox ul .Box2 {
-    background-color: chocolate;
-  }
-  header #BannerBox ul .Box3 {
-    background-color: blueviolet;
-  }
-  header #BannerBox ul .Box4 {
-    background-color: cornflowerblue;
-  }
-  header #BannerBox ul .Box5 {
-    background-color: crimson;
-  }
   footer .HRLine {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -300,21 +285,6 @@ a:hover {
     width: 100vw;
     height: 280px;
     float: left;
-  }
-  header #BannerBox ul .Box1 {
-    background-color: burlywood;
-  }
-  header #BannerBox ul .Box2 {
-    background-color: chocolate;
-  }
-  header #BannerBox ul .Box3 {
-    background-color: blueviolet;
-  }
-  header #BannerBox ul .Box4 {
-    background-color: cornflowerblue;
-  }
-  header #BannerBox ul .Box5 {
-    background-color: crimson;
   }
 }
 
