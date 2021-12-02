@@ -221,7 +221,7 @@ a:hover {
     margin-bottom: 15px;
   }
   footer nav {
-    width: 80%;
+    width: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -252,7 +252,7 @@ a:hover {
             order: 5;
   }
   footer address {
-    width: 50%;
+    width: 25%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

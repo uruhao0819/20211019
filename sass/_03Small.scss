@@ -108,7 +108,7 @@ footer {
 		}
 	}
 	nav {
-		width: $W1 * 8;
+		width: $W1 * 4;
 		// 彈性佈局 設定方式 : 設定在要排列物件的父框架
 		display: flex;
 	}
@@ -130,7 +130,7 @@ footer {
 	}
 
 	address {
-		width: $W1 * 5;
+		width: $W1 * 2.5;
 		// 彈性佈局
 		display: flex;
 		// 上邊界 nav 與 address 的距離
