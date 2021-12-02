@@ -88,7 +88,7 @@
             <!-- 表單 form ，實際用途是傳輸資料用，將資料寫入資料庫或由資料庫讀出修改 -->
             <!-- get傳輸不重要的資料，資料會顯示在網址上 ; post傳輸重要的資料，直接加密方式傳送 -->
             <form action="" method="post">
-                <!-- 姓名 聯絡方式 問題 詳細內容 送出 重新輸入 -->
+                <!-- 姓名 電子信箱 問題 詳細內容 送出 重新輸入 -->
                 <!-- label 可以直接呼叫 input ; for 與 id 相同設定 -->
                 <!-- name 欄位名稱，對應資料庫的欄位名稱 ; 命名，不能用中文，開頭不能為數字 -->
                 <!-- 指定初始值 value ; 使用者須刪除內容，才可填入資料 -->
@@ -98,6 +98,10 @@
                     <label for="UserName">姓名:</label>
                     <input type="text" name="" id="UserName" value="請輸入中文姓名" required minlength="3" maxlength="6">
                 </li>
+                <label for="E_mail">
+                    電子信箱
+                    <input type="email" name="" id="E_mail" required placeholder="輸入可接收到的電子信箱">
+                </label>
                 <!-- 多行文字 textarea ; placeholder 輸入的提示訊息，輸入資料時自動消失 -->
                 <label for="">
                     詳細內容
