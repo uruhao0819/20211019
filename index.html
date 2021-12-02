@@ -92,11 +92,17 @@
                 <!-- label 可以直接呼叫 input ; for 與 id 相同設定 -->
                 <!-- name 欄位名稱，對應資料庫的欄位名稱 ; 命名，不能用中文，開頭不能為數字 -->
                 <!-- 指定初始值 value ; 使用者須刪除內容，才可填入資料 -->
-                <!-- readonly 唯獨不可以更改內容 ; 由資料庫導入資料時設定，可利用 javascript 判斷開啟功能 -->
+                <!-- readonly 唯讀不可以更改內容 ; 由資料庫導入資料時設定，可利用 javascript 判斷開啟功能 -->
+                <!-- 必填 required ; 指定最多能輸入多少字 maxlength ; 指定最少需要輸入多少字 minlength -->
                 <li>
                     <label for="UserName">姓名:</label>
-                    <input type="text" name="" id="UserName" value="請輸入中文姓名">
+                    <input type="text" name="" id="UserName" value="請輸入中文姓名" required minlength="3" maxlength="6">
                 </li>
+
+                <!-- 按鈕 -->
+                <div class="FormBtn">
+                    <input type="submit" value="送出資料">
+                </div>
             </form>
         </article>
     </article>
