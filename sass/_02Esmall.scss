@@ -75,12 +75,14 @@ header {
 	// vw ( 以裝置的寬度為寬度 ) vh ( 以裝置高度為高度 )
 	#BannerBox {
 		width: $W10;
+		height: 600px;
 		// 超出範圍設定
 		overflow-x: auto;
-		ul {
+		background-color: aquamarine;
+		picture {
 			// 圖片框的寬度尺寸
 			width: $W10 * 5;
-			li {
+			.SmallImg {
 				width: 100vw;
 				float: left;
 			}
