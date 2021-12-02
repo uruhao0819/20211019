@@ -90,9 +90,12 @@
             <form action="" method="post">
                 <!-- 姓名 聯絡方式 問題 詳細內容 送出 重新輸入 -->
                 <!-- label 可以直接呼叫 input ; for 與 id 相同設定 -->
+                <!-- name 欄位名稱，對應資料庫的欄位名稱 ; 命名，不能用中文，開頭不能為數字 -->
+                <!-- 指定初始值 value ; 使用者須刪除內容，才可填入資料 -->
+                <!-- readonly 唯獨不可以更改內容 ; 由資料庫導入資料時設定，可利用 javascript 判斷開啟功能 -->
                 <li>
                     <label for="UserName">姓名:</label>
-                    <input type="text" name="" id="UserName">
+                    <input type="text" name="" id="UserName" value="請輸入中文姓名">
                 </li>
             </form>
         </article>
