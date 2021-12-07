@@ -57,15 +57,35 @@
         <div id="BannerBox"> 
             <!-- 項目清單 ul li 輪播圖片 超小與小裝置 ( 左右輪播 ) -->
             <!-- html5 新標籤 picture 必要配置標籤 source 和 img ( 如果所有判斷圖片都讀取不到，就會讀取 img 上的圖片 ) 響應式圖片區塊 : media的判斷，用 max-width 最大的寬度設定 -->
-            <picture class="ImgBox">
+            <picture class="ImgBox01">
                 <source class="SmallImg" srcset="images/banner/s/banner01s.jpg" media="(max-width: 576px)">
-                <source class="SmallImg" srcset="images/banner/s/banner02s.jpg" media="(max-width: 576px)">
-                <source class="SmallImg" srcset="images/banner/s/banner03s.jpg" media="(max-width: 576px)">
-                <source class="SmallImg" srcset="images/banner/s/banner04s.jpg" media="(max-width: 576px)">
-                <source class="SmallImg" srcset="images/banner/s/banner05s.jpg" media="(max-width: 576px)">
                 <source srcset="images/banner/m/banner01m.jpg" media="(max-width: 992px)">
                 <source srcset="images/banner/banner01.jpg" media="(min-width: 1024px)">
-                <img src="images/banner/s/banner01s.jpg" alt="">
+                <img src="images/banner/banner01.jpg" alt="">
+            </picture>
+            <picture class="ImgBox02">
+                <source class="SmallImg" srcset="images/banner/s/banner02s.jpg" media="(max-width: 576px)">
+                <source media="(max-width: 992px)" srcset="images/banner/m/banner02m.jpg">
+                <source media="(min-width: 1024px)" srcset="images/banner/banner02.jpg">
+                <img src="images/banner/banner02.jpg" alt="">
+            </picture>
+            <picture class="ImgBox03">
+                <source class="SmallImg" srcset="images/banner/s/banner03s.jpg" media="(max-width: 576px)">
+                <source media="(max-width: 992px)" srcset="images/banner/m/banner03m.jpg">
+                <source media="(min-width: 1024px)" srcset="images/banner/banner03.jpg">
+                <img src="images/banner/banner03.jpg" alt="">
+            </picture>
+            <picture class="ImgBox04">
+                <source class="SmallImg" srcset="images/banner/s/banner04s.jpg" media="(max-width: 576px)">
+                <source media="(max-width: 992px)" srcset="images/banner/m/banner04m.jpg">
+                <source media="(min-width: 1024px)" srcset="images/banner/banner04.jpg">
+                <img src="images/banner/banner04.jpg" alt="">
+            </picture>
+            <picture class="ImgBox05">
+                <source class="SmallImg" srcset="images/banner/s/banner05s.jpg" media="(max-width: 576px)">
+                <source media="(max-width: 992px)" srcset="images/banner/m/banner05m.jpg">
+                <source media="(min-width: 1024px)" srcset="images/banner/banner05.jpg">
+                <img src="images/banner/banner05.jpg" alt="">
             </picture>
         </div>
     </header>
