@@ -80,7 +80,6 @@ a:hover {
   }
   header #BannerBox {
     width: 100%;
-    height: 600px;
     overflow-x: auto;
     background-color: aquamarine;
   }
