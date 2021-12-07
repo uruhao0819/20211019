@@ -83,10 +83,10 @@ a:hover {
     overflow-x: auto;
     background-color: aquamarine;
   }
-  header #BannerBox picture {
+  header #BannerBox .ImgBox {
     width: 500%;
   }
-  header #BannerBox picture .SmallImg {
+  header #BannerBox .ImgBox .SmallImg {
     width: 100vw;
     float: left;
   }

@@ -79,7 +79,7 @@ header {
 		// 超出範圍設定
 		overflow-x: auto;
 		background-color: aquamarine;
-		picture {
+		.ImgBox {
 			// 圖片框的寬度尺寸
 			width: $W10 * 5;
 			.SmallImg {
