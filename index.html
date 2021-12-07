@@ -125,6 +125,23 @@
                     電子信箱
                     <input type="email" name="" id="E_mail" required placeholder="輸入可接收到的電子信箱">
                 </label>
+                <!-- 詢問問題 -->
+                <label for="Question">
+                    <li>詢問問題</li>
+                    <!-- 單選鈕 radio 送出資料為同一群組，name的名稱要相同 ; 寫入資料庫的值為 value 的內容 -->
+                    <li>
+                        <input type="radio" name="Question" value="平面作品">平面作品
+                    </li>
+                    <li>
+                        <input type="radio" name="Question" value="網頁作品">網頁作品
+                    </li>
+                    <li>
+                        <input type="radio" name="Question" value="影音作品">影音作品
+                    </li>
+                    <li>
+                        <input type="radio" name="Question" value="其他">其他
+                    </li>
+                </label>
                 <!-- 多行文字 textarea ; placeholder 輸入的提示訊息，輸入資料時自動消失 -->
                 <label for="">
                     詳細內容
