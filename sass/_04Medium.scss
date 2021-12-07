@@ -61,30 +61,7 @@ header {
 		// 超出範圍設定
 		overflow-x: auto;
 		background-color: aquamarine;
-		ul {
-			// 圖片框的寬度尺寸
-			width: $W10 * 5;
-			li {
-				width: 100vw;
-				height: $BHsmall;
-				float: left;
-			}
-			// .Box1 {
-			// 	background-color: burlywood;
-			// }
-			// .Box2 {
-			// 	background-color: chocolate;
-			// }
-			// .Box3 {
-			// 	background-color: blueviolet;
-			// }
-			// .Box4 {
-			// 	background-color: cornflowerblue;
-			// }
-			// .Box5 {
-			// 	background-color: crimson;
-			// }
-		}
+		// 讀取 03Small 的資料
 	}
 }
 
