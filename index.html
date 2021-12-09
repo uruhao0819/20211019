@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>個人一頁式網站</title>
     <link rel="stylesheet" href="dist/style/style.min.css">
 </head>
+
 <body>
     <!-- 頁首 一頁式或多頁式 放 共用性質資料 像素px (固定值) % (百分比，依螢幕尺寸計算) -->
     <header>
@@ -52,42 +54,42 @@
             <li id="MobileContact">
                 <a href="#ContactBox">聯絡表單</a>
             </li>
-        </ul>        
+        </ul>
         <!-- 基本輪播圖片 1組為 5張圖 -->
-        <div id="BannerBox"> 
+        <div id="BannerBox">
             <!-- 項目清單 ul li 輪播圖片 超小與小裝置 ( 左右輪播 ) -->
             <div class="ImgBox">
                 <!-- html5 新標籤 picture 必要配置標籤 source 和 img ( 如果所有判斷圖片都讀取不到，就會讀取 img 上的圖片 ) 響應式圖片區塊 : media的判斷，用 max-width 最大的寬度設定 -->
                 <!-- 將 picture 標籤當為一張圖片，裡面可以寫入不同尺寸的相同圖片 ; 例 : 輪播圖有 5 張，須設定 5 個 picture 標籤，每組標籤內可放入不同尺寸但內容卻相同的圖片 -->
                 <picture class="ImgBox01 SmallImg">
-                <source srcset="images/banner/s/banner01s.jpg" media="(max-width: 767px)">
-                <source srcset="images/banner/m/banner01m.jpg" media="(max-width: 1023px)">
-                <source srcset="images/banner/banner01.jpg" media="(min-width: 1024px)">
-                <img src="images/icon/camera.svg" alt="">
+                    <source srcset="images/banner/s/banner01s.jpg" media="(max-width: 767px)">
+                    <source srcset="images/banner/m/banner01m.jpg" media="(max-width: 1023px)">
+                    <source srcset="images/banner/banner01.jpg" media="(min-width: 1024px)">
+                    <img src="images/icon/camera.svg" alt="">
                 </picture>
                 <picture class="ImgBox02 SmallImg">
-                <source media="(max-width: 767px)" srcset="images/banner/s/banner02s.jpg">
-                <source media="(max-width: 1023px)" srcset="images/banner/m/banner02m.jpg">
-                <source media="(min-width: 1024px)" srcset="images/banner/banner02.jpg">
-                <img src="images/icon/camera.svg" alt="">
+                    <source media="(max-width: 767px)" srcset="images/banner/s/banner02s.jpg">
+                    <source media="(max-width: 1023px)" srcset="images/banner/m/banner02m.jpg">
+                    <source media="(min-width: 1024px)" srcset="images/banner/banner02.jpg">
+                    <img src="images/icon/camera.svg" alt="">
                 </picture>
                 <picture class="ImgBox03 SmallImg">
-                <source media="(max-width: 767px)" srcset="images/banner/s/banner03s.jpg">
-                <source media="(max-width: 1023px)" srcset="images/banner/m/banner03m.jpg">
-                <source media="(min-width: 1024px)" srcset="images/banner/banner03.jpg">
-                <img src="images/icon/camera.svg" alt="">
+                    <source media="(max-width: 767px)" srcset="images/banner/s/banner03s.jpg">
+                    <source media="(max-width: 1023px)" srcset="images/banner/m/banner03m.jpg">
+                    <source media="(min-width: 1024px)" srcset="images/banner/banner03.jpg">
+                    <img src="images/icon/camera.svg" alt="">
                 </picture>
                 <picture class="ImgBox04 SmallImg">
-                <source media="(max-width: 767px)" srcset="images/banner/s/banner04s.jpg">
-                <source media="(max-width: 1023px)" srcset="images/banner/m/banner04m.jpg">
-                <source media="(min-width: 1024px)" srcset="images/banner/banner04.jpg">
-                <img src="images/icon/camera.svg" alt="">
+                    <source media="(max-width: 767px)" srcset="images/banner/s/banner04s.jpg">
+                    <source media="(max-width: 1023px)" srcset="images/banner/m/banner04m.jpg">
+                    <source media="(min-width: 1024px)" srcset="images/banner/banner04.jpg">
+                    <img src="images/icon/camera.svg" alt="">
                 </picture>
                 <picture class="ImgBox05 SmallImg">
-                <source media="(max-width: 767px)" srcset="images/banner/s/banner05s.jpg">
-                <source media="(max-width: 1023px)" srcset="images/banner/m/banner05m.jpg">
-                <source media="(min-width: 1024px)" srcset="images/banner/banner05.jpg">
-                <img src="images/icon/camera.svg" alt="">
+                    <source media="(max-width: 767px)" srcset="images/banner/s/banner05s.jpg">
+                    <source media="(max-width: 1023px)" srcset="images/banner/m/banner05m.jpg">
+                    <source media="(min-width: 1024px)" srcset="images/banner/banner05.jpg">
+                    <img src="images/icon/camera.svg" alt="">
                 </picture>
             </div>
         </div>
@@ -106,8 +108,8 @@
             <h1 id="ProjectBox">服務項目</h1>
             <a href="#Logo">TOP</a>
         </article>
-        <article>
-            <h1 id="ContactBox">聯絡表單</h1>
+        <article id="ContactBox">
+            <h1 id="ContactTitle">聯絡表單</h1>
             <!-- 表單 form ，實際用途是傳輸資料用，將資料寫入資料庫或由資料庫讀出修改 -->
             <!-- get傳輸不重要的資料，資料會顯示在網址上 ; post傳輸重要的資料，直接加密方式傳送 -->
             <form action="" method="post">
@@ -128,11 +130,12 @@
                 <!-- 換行 -->
                 <br>
                 <!-- label沒有換行功能 -->
-                <label for="E_mail2">
+                <label for="E_mail2" class="E_mail2">
                     電子信箱
                     <!-- 單行文字，讓使用者自行輸入帳號 ; @ 固定出現 ; 信箱 gmail.com or yahoo.com.tw 等等，用 下拉式選單 讓使用者挑選 -->
                     <input type="text" name="" id="E_mail2" required placeholder="輸入信箱名稱">
-                    <li>@</li>
+                    <!-- 行內標籤 span 不換行，用來強調或是突顯單獨的顏色 -->
+                    <span>@</span>
                     <select name="" id="">
                         <option value="gmail.com">gmail.com</option>
                         <option value="yahoo.com.tw">yahoo.com.tw</option>
@@ -160,7 +163,8 @@
                 <!-- 多行文字 textarea ; placeholder 輸入的提示訊息，輸入資料時自動消失 -->
                 <label for="">
                     詳細內容
-                    <textarea name="" id="" cols="30" rows="10" placeholder="請輸入問題內容，限制100個字，最少10個字" maxlength="100" minlength="10"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="請輸入問題內容，限制100個字，最少10個字" maxlength="100"
+                        minlength="10"></textarea>
                 </label>
 
                 <!-- 按鈕 -->
@@ -191,8 +195,9 @@
         </address>
         <h6>
             <!-- 年分 公司名稱 -->
-            公司網站全部圖文係屬公司版權所有 &copy; 2021
+            公司網站全部圖文係屬公司版權所有 &copy; 2021 - <span>2022</span>
         </h6>
     </footer>
 </body>
+
 </html>
