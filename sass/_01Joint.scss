@@ -117,7 +117,7 @@ $W9: $W10 / 10 * 9; // 寬度 9 等份
 @mixin LargeNav($multiple, $BtnNum) {
 	// 計算方式
 	// 設定 寬度的基準值 5%
-	$W05: 5%;
+	$W05: 5vw;
 	// 設定 代表 Logo寬度 的變數 30% ;寬度的倍數 6 multiple
 	$LogoWidth: $W05 * $multiple;
 

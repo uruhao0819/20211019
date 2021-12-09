@@ -20,8 +20,8 @@ header {
 		}
 		// 商標
 		#Logo {
-			// 寬度 8.5 等份
-			width: $W1 * 8 + 5%;
+			// 寬度 8 等份
+			width: $W1 * 8;
 			// 文字尺寸，內縮，水平置中
 			font-size: $Tpx * 2;
 			// 內縮 : 方法1，首行縮排 ( 單行文字 )
@@ -36,8 +36,8 @@ header {
 		}
 		// 選單
 		#Menu {
-			// 寬度 1.5 等份
-			width: $W1 + 5%;
+			// 寬度 1 等份
+			width: $W1;
 			// height: 100%;
 			// 文字水平 ( 行距 ) 、 垂直 ( 文字對齊 -- 置中 ) 置中
 			text-align: center;
@@ -170,7 +170,7 @@ footer {
 		// 標題
 		#ContactTitle {
 			// 外間距 margin ; 上間距無法將物件與父框架，顯示設定的距離，故改用 內間距 padding 設定
-			margin: {
+			padding: {
 				top: 15px;
 				bottom: 15px;
 			}
@@ -185,8 +185,6 @@ footer {
 					top: 10px;
 					bottom: 10px;
 				}
-				list-style-type: none;
-				background-color: burlywood;
 			}
 
 			// 姓名
