@@ -164,15 +164,39 @@ footer {
 }
 
 #main {
-	#ContatBox {
-		// 寬度 左右留白
-		width: $W1 * 9;
+	#ContactBox {
 		background-color: coral;
 
+		// 標題
+		#ContactTitle {
+			// 外間距 margin ; 上間距無法將物件與父框架，顯示設定的距離，故改用 內間距 padding 設定
+			margin: {
+				top: 15px;
+				bottom: 15px;
+			}
+		}
+
 		form {
+			// 寬度 左右留白
+			width: $W1 * 9;
+			// 繼承 單獨為表單使用
+			%PI {
+				padding: {
+					top: 10px;
+					bottom: 10px;
+				}
+				list-style-type: none;
+				background-color: burlywood;
+			}
+
 			// 姓名
 			#NameBox {
-				background-color: burlywood;
+				@extend %PI;
+			}
+
+			// 子元素選擇器
+			> div {
+				@extend %PI;
 			}
 
 			.E_mail2 {
