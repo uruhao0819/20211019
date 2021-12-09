@@ -167,8 +167,14 @@ footer {
 	#ContatBox {
 		// 寬度 左右留白
 		width: $W1 * 9;
+		background-color: coral;
 
 		form {
+			// 姓名
+			#NameBox {
+				background-color: burlywood;
+			}
+
 			.E_mail2 {
 				@include DN;
 			}
