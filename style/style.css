@@ -158,6 +158,13 @@ a:hover {
   #main #ContactBox form #NameBox, #main #ContactBox form > div {
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 5px;
+  }
+  #main #ContactBox form > #NameBox > label, #main #ContactBox form > .Mail > label, #main #ContactBox form > .Ques > p, #main #ContactBox form > .Text > label {
+    margin-bottom: 10px;
+  }
+  #main #ContactBox form > div {
+    font-size: 1.3rem;
   }
   #main #ContactBox form > #NameBox {
     display: -webkit-box;
@@ -194,7 +201,6 @@ a:hover {
   }
   #main #ContactBox form > .Ques > p {
     width: 100%;
-    margin-bottom: 15px;
   }
   #main #ContactBox form > .Ques > li {
     width: 50%;
