@@ -165,6 +165,8 @@ footer {
 
 #main {
 	#ContactBox {
+		background-image: url(../../images/bg/w_aut02.gif);
+
 		// 標題
 		#ContactTitle {
 			// 外間距 margin ; 上間距無法將物件與父框架，顯示設定的距離，故改用 內間距 padding 設定
@@ -194,6 +196,17 @@ footer {
 				}
 			}
 
+			%InputInBox {
+				width: $WPer * 7.5;
+				height: 30px;
+				font-size: $Trem * 1.1;
+				// 內間距
+				padding: {
+					left: 10px;
+				}
+				color: brown;
+			}
+
 			// 姓名
 			#NameBox {
 				@extend %PI;
@@ -214,7 +227,7 @@ footer {
 					@extend %TitlM;
 				}
 				> input {
-					width: $WPer * 7.5;
+					@extend %InputInBox;
 				}
 			}
 
@@ -226,7 +239,7 @@ footer {
 					@extend %TitlM;
 				}
 				> input {
-					width: $WPer * 7.5;
+					@extend %InputInBox;
 				}
 			}
 
