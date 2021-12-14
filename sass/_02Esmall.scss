@@ -176,14 +176,15 @@ footer {
 
 		form {
 			// 寬度 左右留白
-			width: $W1 * 7;
-			background-color: coral;
+			width: $W1 * 7.5;
+			// background-color: coral;
 			// 繼承 單獨為表單使用
 			%PI {
 				padding: {
 					top: 10px;
 					bottom: 10px;
 				}
+				// background-color: burlywood
 			}
 
 			// 姓名
@@ -197,11 +198,25 @@ footer {
 			}
 
 			> #NameBox {
+				// 彈性佈局
+				display: flex;
+				flex-wrap: wrap;
 				> label {
-					width: $W1 * 10;
+					width: $WPer * 10;
 				}
 				> input {
-					width: $W1 * 8;
+					width: $WPer * 7.5;
+				}
+			}
+
+			> .Mail {
+				display: flex;
+				flex-wrap: wrap;
+				> label {
+					width: $WPer * 10;
+				}
+				> input {
+					width: $WPer * 7.5;
 				}
 			}
 
