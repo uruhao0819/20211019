@@ -152,31 +152,28 @@
 
                 <!-- 詢問問題 -->
                 <div class="Ques">
-                    <label for="Question">
-                        <li>詢問問題</li>
-                        <!-- 單選鈕 radio 送出資料為同一群組，name的名稱要相同 ; 寫入資料庫的值為 value 的內容 -->
-                        <li>
-                            <input type="radio" name="Question" value="平面作品">平面作品
-                        </li>
-                        <li>
-                            <input type="radio" name="Question" value="網頁作品">網頁作品
-                        </li>
-                        <li>
-                            <input type="radio" name="Question" value="影音作品">影音作品
-                        </li>
-                        <li>
-                            <input type="radio" name="Question" value="其他">其他
-                        </li>
-                    </label>
+                    <p>詢問問題</p>
+                    <!-- 單選鈕 radio 送出資料為同一群組，name的名稱要相同 ; 寫入資料庫的值為 value 的內容 -->
+                    <li>
+                        <input type="radio" name="Question" value="平面作品">平面作品
+                    </li>
+                    <li>
+                        <input type="radio" name="Question" value="網頁作品">網頁作品
+                    </li>
+                    <li>
+                        <input type="radio" name="Question" value="影音作品">影音作品
+                    </li>
+                    <li>
+                        <input type="radio" name="Question" value="其他">其他
+                    </li>
                 </div>
 
                 <!-- 多行文字 textarea ; placeholder 輸入的提示訊息，輸入資料時自動消失 -->
                 <div class="Text">
-                    <label for="">
-                        詳細內容
-                        <textarea name="" id="" cols="30" rows="10" placeholder="請輸入問題內容，限制100個字，最少10個字" maxlength="100"
-                            minlength="10"></textarea>
-                    </label>
+                    <label for="">詳細內容</label>
+
+                    <textarea name="" id="" cols="30" rows="10" placeholder="請輸入問題內容，限制100個字，最少10個字" maxlength="100"
+                        minlength="10"></textarea>
                 </div>
 
                 <!-- 按鈕 -->
