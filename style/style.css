@@ -160,7 +160,7 @@ a:hover {
     padding-bottom: 10px;
     margin-bottom: 5px;
   }
-  #main #ContactBox form > #NameBox > label, #main #ContactBox form > .Mail > label, #main #ContactBox form > .Ques > p, #main #ContactBox form > .Text > label {
+  #main #ContactBox form > #NameBox > label, #main #ContactBox form > .Mail > label, #main #ContactBox form > .Ques > p, #main #ContactBox form > .Text > li {
     margin-bottom: 10px;
   }
   #main #ContactBox form > div {
@@ -206,7 +206,7 @@ a:hover {
     width: 50%;
     margin-bottom: 15px;
   }
-  #main #ContactBox form > .Text > label {
+  #main #ContactBox form > .Text > li {
     width: 100%;
   }
   #main #ContactBox form > .Text > textarea {

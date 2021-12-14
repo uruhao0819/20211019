@@ -254,7 +254,7 @@ footer {
 			}
 
 			> .Text {
-				> label {
+				> li {
 					width: $WPer * 10;
 					@extend %TitlM;
 				}
