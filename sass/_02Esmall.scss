@@ -165,8 +165,6 @@ footer {
 
 #main {
 	#ContactBox {
-		background-color: coral;
-
 		// 標題
 		#ContactTitle {
 			// 外間距 margin ; 上間距無法將物件與父框架，顯示設定的距離，故改用 內間距 padding 設定
@@ -178,7 +176,8 @@ footer {
 
 		form {
 			// 寬度 左右留白
-			width: $W1 * 9;
+			width: $W1 * 7;
+			background-color: coral;
 			// 繼承 單獨為表單使用
 			%PI {
 				padding: {
@@ -195,6 +194,49 @@ footer {
 			// 子元素選擇器
 			> div {
 				@extend %PI;
+			}
+
+			> #NameBox {
+				> label {
+					width: $W1 * 10;
+				}
+				> input {
+					width: $W1 * 8;
+				}
+			}
+
+			> .Ques {
+				// 彈性佈局
+				display: flex;
+				// 換行
+				flex-wrap: wrap;
+
+				> p {
+					// 寬度
+					width: 100%;
+					// 外間距
+					margin: {
+						bottom: 15px;
+					}
+				}
+
+				> li {
+					// 寬度
+					width: 50%;
+					// 外間距
+					margin: {
+						bottom: 15px;
+					}
+				}
+			}
+
+			> .Text {
+				> label {
+					width: 100%;
+				}
+				> textarea {
+					width: 95%;
+				}
 			}
 
 			.E_mail2 {
