@@ -149,7 +149,7 @@ a:hover {
     background-color: coral;
   }
   #main #ContactBox {
-    background-image: url(../../images/bg/w_aut02.gif);
+    background-image: url(../../images/bg/w_gu014.gif);
   }
   #main #ContactBox #ContactTitle {
     padding-top: 15px;
@@ -172,6 +172,7 @@ a:hover {
     font-size: 1.1rem;
     padding-left: 10px;
     color: brown;
+    font-weight: 500;
   }
   #main #ContactBox form > div {
     font-size: 1.3rem;
@@ -185,6 +186,22 @@ a:hover {
   }
   #main #ContactBox form > #NameBox > label {
     width: 100%;
+  }
+  #main #ContactBox form > #NameBox > input[type="text"]::-webkit-input-placeholder {
+    color: brown;
+    font-weight: 600;
+  }
+  #main #ContactBox form > #NameBox > input[type="text"]:-ms-input-placeholder {
+    color: brown;
+    font-weight: 600;
+  }
+  #main #ContactBox form > #NameBox > input[type="text"]::-ms-input-placeholder {
+    color: brown;
+    font-weight: 600;
+  }
+  #main #ContactBox form > #NameBox > input[type="text"]::placeholder {
+    color: brown;
+    font-weight: 600;
   }
   #main #ContactBox form > .Mail {
     display: -webkit-box;

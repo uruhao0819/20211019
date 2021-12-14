@@ -165,7 +165,7 @@ footer {
 
 #main {
 	#ContactBox {
-		background-image: url(../../images/bg/w_aut02.gif);
+		background-image: url(../../images/bg/w_gu014.gif);
 
 		// 標題
 		#ContactTitle {
@@ -204,7 +204,11 @@ footer {
 				padding: {
 					left: 10px;
 				}
+
+				// 使用者輸入時，呈現的樣式
 				color: brown;
+				// 文字粗細
+				font-weight: 500;
 			}
 
 			// 姓名
@@ -228,6 +232,11 @@ footer {
 				}
 				> input {
 					@extend %InputInBox;
+				}
+				// 偽類別，使用者觀看到的樣式
+				> input[type="text"]::placeholder {
+					color: brown;
+					font-weight: 600;
 				}
 			}
 
