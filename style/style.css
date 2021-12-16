@@ -40,9 +40,6 @@ a:hover {
 }
 
 @media screen and (max-width: 576px) {
-  #Top {
-    display: none;
-  }
   header nav {
     width: 100vw;
     position: fixed;
@@ -489,17 +486,6 @@ a:hover {
 }
 
 @media screen and (min-width: 992px) {
-  #Top {
-    display: block;
-    position: absolute;
-    z-index: 20;
-    width: 60px;
-    height: 60px;
-    background-color: wheat;
-    position: fixed;
-    bottom: 50px;
-    right: 0;
-  }
   header nav {
     width: 100vw;
     background-color: rosybrown;
