@@ -68,3 +68,11 @@ footer {
 	nav {
 	}
 }
+
+#main {
+	> #ContactBox {
+		> form {
+			width: $WPer * 4.5;
+		}
+	}
+}
