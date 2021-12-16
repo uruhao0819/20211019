@@ -221,7 +221,7 @@ a:hover {
     width: 100%;
   }
   #main #ContactBox form > .Ques > li {
-    width: 100%;
+    width: 50%;
     margin-bottom: 15px;
   }
   #main #ContactBox form > .TextArea > li {
@@ -436,7 +436,7 @@ a:hover {
     width: 100%;
   }
   #main #ContactBox form > .Ques > li {
-    width: 100%;
+    width: 50%;
     margin-bottom: 15px;
   }
   #main #ContactBox form > .TextArea > li {
@@ -652,7 +652,7 @@ a:hover {
     width: 100%;
   }
   #main #ContactBox form > .Ques > li {
-    width: 100%;
+    width: 50%;
     margin-bottom: 15px;
   }
   #main #ContactBox form > .TextArea > li {
