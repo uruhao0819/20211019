@@ -163,11 +163,11 @@ a:hover {
     padding-bottom: 10px;
     margin-bottom: 5px;
   }
-  #main #ContactBox form > #NameBox > label, #main #ContactBox form > .Mail > label, #main #ContactBox form > .Ques > p, #main #ContactBox form > .Text > li {
+  #main #ContactBox form > #NameBox > label, #main #ContactBox form > .Mail > label, #main #ContactBox form > .Ques > p, #main #ContactBox form > .TextArea > li {
     margin-bottom: 10px;
   }
   #main #ContactBox form > #NameBox > input, #main #ContactBox form > .Mail > input {
-    width: 75%;
+    width: 100%;
     height: 30px;
     font-size: 1.1rem;
     padding-left: 10px;
@@ -186,22 +186,6 @@ a:hover {
   }
   #main #ContactBox form > #NameBox > label {
     width: 100%;
-  }
-  #main #ContactBox form > #NameBox > input[type="text"]::-webkit-input-placeholder {
-    color: brown;
-    font-weight: 600;
-  }
-  #main #ContactBox form > #NameBox > input[type="text"]:-ms-input-placeholder {
-    color: brown;
-    font-weight: 600;
-  }
-  #main #ContactBox form > #NameBox > input[type="text"]::-ms-input-placeholder {
-    color: brown;
-    font-weight: 600;
-  }
-  #main #ContactBox form > #NameBox > input[type="text"]::placeholder {
-    color: brown;
-    font-weight: 600;
   }
   #main #ContactBox form > .Mail {
     display: -webkit-box;
@@ -224,14 +208,45 @@ a:hover {
     width: 100%;
   }
   #main #ContactBox form > .Ques > li {
-    width: 50%;
+    width: 100%;
     margin-bottom: 15px;
   }
-  #main #ContactBox form > .Text > li {
+  #main #ContactBox form > .TextArea > li {
     width: 100%;
   }
-  #main #ContactBox form > .Text > textarea {
-    width: 95%;
+  #main #ContactBox form > .TextArea > textarea {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  #main #ContactBox form > .FormBtn {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #main #ContactBox form > .FormBtn > input[type="submit"] {
+    width: 100px;
+    height: 35px;
+    font-size: 1.2rem;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    background-color: #9c0b28;
+  }
+  #main #ContactBox form > .FormBtn > input[type="reset"] {
+    width: 100px;
+    height: 35px;
+    font-size: 1.2rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    background-color: #0159be;
   }
   #main #ContactBox form .E_mail2 {
     display: none;
