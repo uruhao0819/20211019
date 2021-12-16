@@ -47,7 +47,7 @@ a:hover {
     width: 100vw;
     position: fixed;
     top: 0;
-    background-color: rosybrown;
+    background-color: white;
   }
   header nav li {
     float: left;
@@ -490,7 +490,7 @@ a:hover {
 
 @media screen and (min-width: 992px) {
   #Top {
-    display: none;
+    display: block;
     position: absolute;
     z-index: 20;
     width: 60px;
@@ -596,6 +596,9 @@ a:hover {
     font-size: 0.8rem;
     font-weight: 200;
     background-color: coral;
+  }
+  #main article {
+    height: 1650px;
   }
   #main #ContactBox {
     background-image: url(../../images/bg/w_gu014.gif);
