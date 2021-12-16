@@ -178,7 +178,7 @@ footer {
 
 		form {
 			// 寬度 左右留白
-			width: $W1 * 7.5;
+			width: $W1 * 8;
 			// background-color: coral;
 			// 繼承 單獨為表單使用
 			%PI {
@@ -233,7 +233,7 @@ footer {
 				> input {
 					@extend %InputInBox;
 				}
-				// 偽元素，使用者觀看到的樣式
+				// 偽元素，使用者觀看到的樣式 ; 表單統一設計樣式
 				> input[type="text"]::placeholder {
 					// color: brown;
 					// font-weight: 600;
