@@ -109,7 +109,8 @@ footer {
 	.HRLine {
 		// 上邊界與下邊界，讓 main 與 footer 有點區隔
 		margin: {
-			top: 15px;
+			// 空白間隔
+			// top: 15px;
 			bottom: 15px;
 		}
 	}
@@ -184,7 +185,8 @@ footer {
 			%PI {
 				padding: {
 					top: 10px;
-					bottom: 10px;
+					// 表單與頁尾之間的距離
+					bottom: 15px;
 				}
 				margin: {
 					bottom: 5px;
@@ -214,6 +216,17 @@ footer {
 			// 姓名
 			#NameBox {
 				@extend %PI;
+			}
+
+			%BtnSR {
+				width: 100px;
+				height: 35px;
+				font-size: $Trem * 1.2;
+				color: white;
+				// 按鈕平面化，邊框線段為 0
+				border: 0;
+				// 圓角
+				border-radius: 15px;
 			}
 
 			// 子元素選擇器
@@ -289,30 +302,19 @@ footer {
 			> .FormBtn {
 				width: $WPer * 10;
 				display: flex;
+				margin: {
+					bottom: 0;
+				}
 
 				> input[type="submit"] {
-					width: 100px;
-					height: 35px;
-					font-size: $Trem * 1.2;
+					@extend %BtnSR;
 					order: 2;
-					color: white;
-					// 按鈕平面化，邊框線段為 0
-					border: 0;
-					// 圓角
-					border-radius: 15px;
 					background-color: rgb(156, 11, 40);
 				}
 
 				> input[type="reset"] {
-					width: 100px;
-					height: 35px;
-					font-size: $Trem * 1.2;
+					@extend %BtnSR;
 					order: 1;
-					color: white;
-					// 按鈕平面化，邊框線段為 0
-					border: 0;
-					// 圓角
-					border-radius: 15px;
 					background-color: rgb(1, 89, 190);
 				}
 			}

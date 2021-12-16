@@ -91,7 +91,6 @@ a:hover {
     float: left;
   }
   footer .HRLine {
-    margin-top: 15px;
     margin-bottom: 15px;
   }
   footer nav {
@@ -160,7 +159,7 @@ a:hover {
   }
   #main #ContactBox form #NameBox, #main #ContactBox form > div {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     margin-bottom: 5px;
   }
   #main #ContactBox form > #NameBox > label, #main #ContactBox form > .Mail > label, #main #ContactBox form > .Ques > p, #main #ContactBox form > .TextArea > li {
@@ -173,6 +172,14 @@ a:hover {
     padding-left: 10px;
     color: brown;
     font-weight: 500;
+  }
+  #main #ContactBox form > .FormBtn > input[type="submit"], #main #ContactBox form > .FormBtn > input[type="reset"] {
+    width: 100px;
+    height: 35px;
+    font-size: 1.2rem;
+    color: white;
+    border: 0;
+    border-radius: 15px;
   }
   #main #ContactBox form > div {
     font-size: 1.3rem;
@@ -223,29 +230,18 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 0;
   }
   #main #ContactBox form > .FormBtn > input[type="submit"] {
-    width: 100px;
-    height: 35px;
-    font-size: 1.2rem;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    color: white;
-    border: 0;
-    border-radius: 15px;
     background-color: #9c0b28;
   }
   #main #ContactBox form > .FormBtn > input[type="reset"] {
-    width: 100px;
-    height: 35px;
-    font-size: 1.2rem;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    color: white;
-    border: 0;
-    border-radius: 15px;
     background-color: #0159be;
   }
   #main #ContactBox form .E_mail2 {
