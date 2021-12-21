@@ -89,22 +89,24 @@ a:hover {
     background-color: aquamarine;
     margin-top: 65px;
   }
-  header #BannerBox > .BtnBox {
+  header #BannerBox > .Arrow {
     width: 100%;
     position: absolute;
-    z-index: 10;
+    z-index: 5;
     font-size: 1.8rem;
+    text-align: center;
+    line-height: 60px;
+    top: 195px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: yellowgreen;
   }
-  header #BannerBox > .BtnBox > .LeftBtn {
+  header #BannerBox > .Arrow > .Larrow {
     width: 7%;
     height: 60px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.3);
   }
-  header #BannerBox > .BtnBox > .RightBtn {
+  header #BannerBox > .Arrow > .Rarrow {
     width: 7%;
     height: 60px;
     background-color: #753535;

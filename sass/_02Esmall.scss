@@ -95,24 +95,29 @@ header {
 		}
 
 		// 輪播圖左右按鈕
-		> .BtnBox {
+		> .Arrow {
 			width: $WPer * 10;
 			// 相對定位
 			position: absolute;
 			// 層級
-			z-index: 10;
+			z-index: 5;
 			// 文字尺寸
 			font-size: $Trem * 1.8;
+			// 水平置中
+			text-align: center;
+			// 垂直置中
+			line-height: 60px;
+			// 往中間設定
+			top: 160px + 65px - 30px;
 			display: flex;
-			background-color: yellowgreen;
 
-			> .LeftBtn {
+			> .Larrow {
 				width: $WPer * 0.7;
 				height: 60px;
-				background-color: white;
+				background-color: rgba(255, 255, 255, 0.3);
 			}
 
-			> .RightBtn {
+			> .Rarrow {
 				width: $WPer * 0.7;
 				height: 60px;
 				background-color: rgb(117, 53, 53);
