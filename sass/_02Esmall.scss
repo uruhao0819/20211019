@@ -126,6 +126,8 @@ header {
 				// 圓角矩形
 				border-radius: 20px;
 				background-color: rgba(255, 255, 255, 0.3);
+				// 定位點 停佇
+				// position: fixed;
 			}
 
 			> .Larrow {
@@ -142,25 +144,36 @@ header {
 		.ImgBox {
 			// 圖片框的寬度尺寸
 			width: $W10 * 5;
+			// 呼叫動畫 動畫名稱 總秒數 動畫樣式
+			animation: move 25s infinite;
 			.SmallImg {
 				width: 100vw;
 				float: left;
 			}
-			// .Box1 {
-			// 	background-color: burlywood;
-			// }
-			// .Box2 {
-			// 	background-color: chocolate;
-			// }
-			// .Box3 {
-			// 	background-color: blueviolet;
-			// }
-			// .Box4 {
-			// 	background-color: cornflowerblue;
-			// }
-			// .Box5 {
-			// 	background-color: crimson;
-			// }
+		}
+
+		// 動畫 1.設定關鍵影格 2.呼叫動畫
+		@keyframes move {
+			0%,
+			15% {
+				transform: translateX(0%);
+			}
+			20%,
+			35% {
+				transform: translateX(-100%);
+			}
+			40%,
+			55% {
+				transform: translateX(-200%);
+			}
+			60%,
+			75% {
+				transform: translateX(-300%);
+			}
+			80%,
+			95% {
+				transform: translateX(-400%);
+			}
 		}
 	}
 }

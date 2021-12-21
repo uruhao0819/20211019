@@ -118,10 +118,66 @@ a:hover {
   }
   header #BannerBox .ImgBox {
     width: 500vw;
+    -webkit-animation: move 25s infinite;
+            animation: move 25s infinite;
   }
   header #BannerBox .ImgBox .SmallImg {
     width: 100vw;
     float: left;
+  }
+  @-webkit-keyframes move {
+    0%,
+    15% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+    20%,
+    35% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    40%,
+    55% {
+      -webkit-transform: translateX(-200%);
+              transform: translateX(-200%);
+    }
+    60%,
+    75% {
+      -webkit-transform: translateX(-300%);
+              transform: translateX(-300%);
+    }
+    80%,
+    95% {
+      -webkit-transform: translateX(-400%);
+              transform: translateX(-400%);
+    }
+  }
+  @keyframes move {
+    0%,
+    15% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+    20%,
+    35% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    40%,
+    55% {
+      -webkit-transform: translateX(-200%);
+              transform: translateX(-200%);
+    }
+    60%,
+    75% {
+      -webkit-transform: translateX(-300%);
+              transform: translateX(-300%);
+    }
+    80%,
+    95% {
+      -webkit-transform: translateX(-400%);
+              transform: translateX(-400%);
+    }
   }
   footer .HRLine {
     margin-bottom: 15px;
