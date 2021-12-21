@@ -47,6 +47,7 @@ a:hover {
     width: 100vw;
     position: fixed;
     top: 0;
+    z-index: 9999;
     background-color: white;
   }
   header nav li {
@@ -79,7 +80,7 @@ a:hover {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    z-index: 20;
+    z-index: 9999;
     display: none;
     background-color: #b4566e;
   }
@@ -95,21 +96,23 @@ a:hover {
     z-index: 5;
     font-size: 1.8rem;
     text-align: center;
-    line-height: 60px;
-    top: 195px;
+    line-height: 80px;
+    top: 33.85417%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  header #BannerBox > .Arrow > .Larrow {
-    width: 7%;
-    height: 60px;
+  header #BannerBox > .Arrow > .arrow {
+    width: 6%;
+    height: 80px;
+    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
   }
+  header #BannerBox > .Arrow > .Larrow {
+    margin-left: 10px;
+  }
   header #BannerBox > .Arrow > .Rarrow {
-    width: 7%;
-    height: 60px;
-    background-color: #753535;
+    margin-right: 10px;
   }
   header #BannerBox .ImgBox {
     width: 500vw;
