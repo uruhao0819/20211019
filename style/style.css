@@ -127,56 +127,56 @@ a:hover {
   }
   @-webkit-keyframes move {
     0%,
-    15% {
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
+    20% {
+      -webkit-transform: translateX(0vw);
+              transform: translateX(0vw);
     }
-    20%,
-    35% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
+    25%,
+    40% {
+      -webkit-transform: translateX(-100vw);
+              transform: translateX(-100vw);
     }
-    40%,
-    55% {
-      -webkit-transform: translateX(-200%);
-              transform: translateX(-200%);
+    45%,
+    60% {
+      -webkit-transform: translateX(-200vw);
+              transform: translateX(-200vw);
     }
-    60%,
-    75% {
-      -webkit-transform: translateX(-300%);
-              transform: translateX(-300%);
+    65%,
+    80% {
+      -webkit-transform: translateX(-300vw);
+              transform: translateX(-300vw);
     }
-    80%,
-    95% {
-      -webkit-transform: translateX(-400%);
-              transform: translateX(-400%);
+    85%,
+    100% {
+      -webkit-transform: translateX(-400vw);
+              transform: translateX(-400vw);
     }
   }
   @keyframes move {
     0%,
-    15% {
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
+    20% {
+      -webkit-transform: translateX(0vw);
+              transform: translateX(0vw);
     }
-    20%,
-    35% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
+    25%,
+    40% {
+      -webkit-transform: translateX(-100vw);
+              transform: translateX(-100vw);
     }
-    40%,
-    55% {
-      -webkit-transform: translateX(-200%);
-              transform: translateX(-200%);
+    45%,
+    60% {
+      -webkit-transform: translateX(-200vw);
+              transform: translateX(-200vw);
     }
-    60%,
-    75% {
-      -webkit-transform: translateX(-300%);
-              transform: translateX(-300%);
+    65%,
+    80% {
+      -webkit-transform: translateX(-300vw);
+              transform: translateX(-300vw);
     }
-    80%,
-    95% {
-      -webkit-transform: translateX(-400%);
-              transform: translateX(-400%);
+    85%,
+    100% {
+      -webkit-transform: translateX(-400vw);
+              transform: translateX(-400vw);
     }
   }
   footer .HRLine {

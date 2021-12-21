@@ -144,7 +144,7 @@ header {
 		.ImgBox {
 			// 圖片框的寬度尺寸
 			width: $W10 * 5;
-			// 呼叫動畫 動畫名稱 總秒數 動畫樣式
+			// 呼叫動畫 動畫名稱 總秒數 播放次數 (無限播放)
 			animation: move 25s infinite;
 			.SmallImg {
 				width: 100vw;
@@ -155,24 +155,24 @@ header {
 		// 動畫 1.設定關鍵影格 2.呼叫動畫
 		@keyframes move {
 			0%,
-			15% {
-				transform: translateX(0%);
+			20% {
+				transform: translateX(0vw);
 			}
-			20%,
-			35% {
-				transform: translateX(-100%);
+			25%,
+			40% {
+				transform: translateX(-100vw);
 			}
-			40%,
-			55% {
-				transform: translateX(-200%);
+			45%,
+			60% {
+				transform: translateX(-200vw);
 			}
-			60%,
-			75% {
-				transform: translateX(-300%);
+			65%,
+			80% {
+				transform: translateX(-300vw);
 			}
-			80%,
-			95% {
-				transform: translateX(-400%);
+			85%,
+			100% {
+				transform: translateX(-400vw);
 			}
 		}
 	}
