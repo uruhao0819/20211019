@@ -65,15 +65,6 @@ header {
 				height: 120px;
 			}
 		}
-
-		.ImgBox {
-			// 圖片框的寬度尺寸
-			width: $W10 * 5;
-			.SmallImg {
-				width: 100vw;
-				float: left;
-			}
-		}
 	}
 }
 
