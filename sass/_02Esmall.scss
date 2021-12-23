@@ -127,28 +127,31 @@ header {
 				border-radius: 20px;
 				background-color: rgba(255, 255, 255, 0.3);
 				// 定位點 停佇
-				// position: fixed;
+				position: fixed;
 			}
 
 			> .Larrow {
 				// 外間距靠左
-				margin-left: 10px;
+				left: 10px;
 			}
 
 			> .Rarrow {
 				// 外間距靠右
-				margin-right: 10px;
+				right: 10px;
 			}
 		}
 
 		.ImgBox {
 			// 圖片框的寬度尺寸
 			width: $W10 * 5;
-			// 呼叫動畫 動畫名稱 總秒數 播放次數 (無限播放)
-			animation: move 25s infinite;
+			// 呼叫動畫 動畫名稱 總秒數 播放次數 (無限播放) 反向播放
+			animation: move 25s infinite alternate;
 			.SmallImg {
 				width: 100vw;
 				float: left;
+			}
+			> .SmallImg:hover {
+				animation-play-state: paused;
 			}
 		}
 
