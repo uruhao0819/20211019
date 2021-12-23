@@ -78,12 +78,57 @@ header {
 	#BannerBox {
 		width: $W10;
 		// 超出範圍設定
-		overflow-x: auto;
+		overflow-x: hidden;
 		background-color: aquamarine;
 
 		// 導覽固定在上方，會形成浮動狀態，故廣告區的上方要用 外間距設定為高度
 		margin: {
 			top: $NH;
+		}
+
+		// 相對定位 (移動物件的定位點) -- 重新定位
+		position: relative;
+
+		// 輪播圖左右按鈕
+		> .Arrow {
+			width: $WPer * 10;
+			// 相對定位
+			position: absolute;
+			// 層級
+			z-index: 5;
+			// 文字尺寸
+			font-size: $Trem * 1.8;
+			// 水平置中
+			text-align: center;
+			// 垂直置中
+			line-height: 120px;
+			// 設定為 50% 位置
+			top: 50%;
+			// 外間距
+			margin: {
+				top: -60px;
+			}
+			display: flex;
+
+			> .arrow {
+				width: $WPer * 0.6;
+				height: 120px;
+				// 圓角矩形
+				border-radius: 20px;
+				background-color: rgba(255, 255, 255, 0.3);
+				// 定位點 停佇
+				position: fixed;
+			}
+
+			> .Larrow {
+				// 外間距靠左
+				left: 10px;
+			}
+
+			> .Rarrow {
+				// 外間距靠右
+				right: 10px;
+			}
 		}
 
 		.ImgBox {
@@ -93,21 +138,8 @@ header {
 				width: 100vw;
 				float: left;
 			}
-			// .Box1 {
-			// 	background-color: burlywood;
-			// }
-			// .Box2 {
-			// 	background-color: chocolate;
-			// }
-			// .Box3 {
-			// 	background-color: blueviolet;
-			// }
-			// .Box4 {
-			// 	background-color: cornflowerblue;
-			// }
-			// .Box5 {
-			// 	background-color: crimson;
-			// }
+			// 呼叫動畫 動畫名稱 總秒數 播放次數 (無限播放) 反向播放
+			animation: move 25s infinite alternate;
 		}
 	}
 }

@@ -51,8 +51,21 @@ header {
 		width: $W10;
 		// 因為，架高度會由圖片帶出，所以不用設定高度
 		// 超出範圍設定
-		overflow-x: auto;
+		overflow-x: hidden;
 		background-color: aquamarine;
+
+		> .Arrow {
+			line-height: 120px;
+			margin: {
+				top: -60px;
+			}
+
+			> .arrow {
+				width: $WPer * 0.2;
+				height: 120px;
+			}
+		}
+
 		.ImgBox {
 			// 圖片框的寬度尺寸
 			width: $W10 * 5;

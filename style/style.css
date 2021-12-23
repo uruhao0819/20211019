@@ -388,12 +388,41 @@ a:hover {
   }
   header #BannerBox {
     width: 100vw;
-    overflow-x: auto;
+    overflow-x: hidden;
     background-color: aquamarine;
     margin-top: 65px;
+    position: relative;
+  }
+  header #BannerBox > .Arrow {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 120px;
+    top: 50%;
+    margin-top: -60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header #BannerBox > .Arrow > .arrow {
+    width: 6%;
+    height: 120px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
+  }
+  header #BannerBox > .Arrow > .Larrow {
+    left: 10px;
+  }
+  header #BannerBox > .Arrow > .Rarrow {
+    right: 10px;
   }
   header #BannerBox .ImgBox {
     width: 500vw;
+    -webkit-animation: move 25s infinite alternate;
+            animation: move 25s infinite alternate;
   }
   header #BannerBox .ImgBox .SmallImg {
     width: 100vw;
@@ -569,10 +598,12 @@ a:hover {
   header nav #Contact {
     display: none;
   }
-  header #BannerBox {
-    width: 100vw;
-    overflow-x: auto;
-    background-color: aquamarine;
+  header #BannerBox > .Arrow {
+    line-height: 140px;
+    margin-top: -70px;
+  }
+  header #BannerBox > .Arrow > .arrow {
+    height: 140px;
   }
 }
 
@@ -624,9 +655,17 @@ a:hover {
   }
   header #BannerBox {
     width: 100vw;
-    overflow-x: auto;
+    overflow-x: hidden;
     background-color: aquamarine;
     margin-top: 0;
+  }
+  header #BannerBox > .Arrow {
+    line-height: 120px;
+    margin-top: -60px;
+  }
+  header #BannerBox > .Arrow > .arrow {
+    width: 2.5%;
+    height: 120px;
   }
   footer .HRLine {
     margin-bottom: 15px;
@@ -826,8 +865,16 @@ a:hover {
   }
   header #BannerBox {
     width: 100vw;
-    overflow-x: auto;
+    overflow-x: hidden;
     background-color: aquamarine;
+  }
+  header #BannerBox > .Arrow {
+    line-height: 120px;
+    margin-top: -60px;
+  }
+  header #BannerBox > .Arrow > .arrow {
+    width: 2%;
+    height: 120px;
   }
   header #BannerBox .ImgBox {
     width: 500vw;
