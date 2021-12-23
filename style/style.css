@@ -86,7 +86,7 @@ a:hover {
   }
   header #BannerBox {
     width: 100vw;
-    overflow-x: auto;
+    overflow-x: hidden;
     background-color: aquamarine;
     margin-top: 65px;
     position: relative;
@@ -94,7 +94,7 @@ a:hover {
   header #BannerBox > .Arrow {
     width: 100%;
     position: absolute;
-    z-index: 5;
+    z-index: 15;
     font-size: 1.8rem;
     text-align: center;
     line-height: 80px;
@@ -116,6 +116,10 @@ a:hover {
   }
   header #BannerBox > .Arrow > .Rarrow {
     right: 10px;
+  }
+  header #BannerBox > .RadioBox {
+    position: absolute;
+    z-index: 10;
   }
   header #BannerBox .ImgBox {
     width: 500vw;
