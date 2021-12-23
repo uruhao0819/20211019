@@ -109,21 +109,26 @@ a:hover {
     height: 80px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
   }
   header #BannerBox > .Arrow > .Larrow {
-    margin-left: 10px;
+    left: 10px;
   }
   header #BannerBox > .Arrow > .Rarrow {
-    margin-right: 10px;
+    right: 10px;
   }
   header #BannerBox .ImgBox {
     width: 500vw;
-    -webkit-animation: move 25s infinite;
-            animation: move 25s infinite;
+    -webkit-animation: move 25s infinite alternate;
+            animation: move 25s infinite alternate;
   }
   header #BannerBox .ImgBox .SmallImg {
     width: 100vw;
     float: left;
+  }
+  header #BannerBox .ImgBox > .SmallImg:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
   }
   @-webkit-keyframes move {
     0%,
