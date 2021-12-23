@@ -185,8 +185,9 @@ header {
 		// 控制按鈕
 		> .Controls_Visible {
 			position: absolute;
-			width: $W1 * 10;
+			width: 100%;
 			text-align: center;
+			bottom: 12px;
 
 			> label {
 				// 顯示方式 行內區塊

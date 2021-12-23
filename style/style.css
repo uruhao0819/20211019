@@ -242,8 +242,9 @@ a:hover {
   }
   header #BannerBox > .Controls_Visible {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     text-align: center;
+    bottom: 12px;
   }
   header #BannerBox > .Controls_Visible > label {
     display: inline-block;
