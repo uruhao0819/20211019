@@ -169,9 +169,11 @@ a:hover {
   }
   header #BannerBox > .Arrow > .Larrow {
     left: 10px;
+    margin-left: 10px;
   }
   header #BannerBox > .Arrow > .Rarrow {
     right: 10px;
+    margin-right: 10px;
   }
   header #BannerBox > .RadioBox {
     position: absolute;

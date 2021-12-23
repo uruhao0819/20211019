@@ -131,13 +131,17 @@ header {
 			}
 
 			> .Larrow {
-				// 靠左
+				// 靠左 啟用 定位點 停佇
 				left: 10px;
+				// 不啟用 定位點 停佇
+				margin-left: 10px;
 			}
 
 			> .Rarrow {
-				// 靠右
+				// 靠右 啟用 定位點 停佇
 				right: 10px;
+				// 不啟用 定位點 停佇
+				margin-right: 10px;
 			}
 		}
 
