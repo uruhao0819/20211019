@@ -181,6 +181,29 @@ header {
 				transform: translateX(-400vw);
 			}
 		}
+
+		// 控制按鈕
+		> .Controls_Visible {
+			position: absolute;
+			width: $W1 * 10;
+			text-align: center;
+
+			> label {
+				// 顯示方式 行內區塊
+				display: inline-block;
+				// 寬度與高度 同數值為正
+				width: 10px;
+				height: 10px;
+				// 物件的左右問題
+				margin: 0 5px;
+				// 背景顏色
+				background-color: white;
+				// 圓角 正圓
+				border-radius: 50%;
+				// 框線
+				border: 2px solid white;
+			}
+		}
 	}
 }
 

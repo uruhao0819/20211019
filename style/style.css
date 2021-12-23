@@ -39,6 +39,62 @@ a:hover {
   font-weight: 650;
 }
 
+@-webkit-keyframes move {
+  0%,
+  20% {
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+  25%,
+  40% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  45%,
+  60% {
+    -webkit-transform: translateX(-200vw);
+            transform: translateX(-200vw);
+  }
+  65%,
+  80% {
+    -webkit-transform: translateX(-300vw);
+            transform: translateX(-300vw);
+  }
+  85%,
+  100% {
+    -webkit-transform: translateX(-400vw);
+            transform: translateX(-400vw);
+  }
+}
+
+@keyframes move {
+  0%,
+  20% {
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+  25%,
+  40% {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  45%,
+  60% {
+    -webkit-transform: translateX(-200vw);
+            transform: translateX(-200vw);
+  }
+  65%,
+  80% {
+    -webkit-transform: translateX(-300vw);
+            transform: translateX(-300vw);
+  }
+  85%,
+  100% {
+    -webkit-transform: translateX(-400vw);
+            transform: translateX(-400vw);
+  }
+}
+
 @media screen and (max-width: 576px) {
   #Top {
     display: none;
@@ -183,6 +239,20 @@ a:hover {
       -webkit-transform: translateX(-400vw);
               transform: translateX(-400vw);
     }
+  }
+  header #BannerBox > .Controls_Visible {
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+  }
+  header #BannerBox > .Controls_Visible > label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
   }
   footer .HRLine {
     margin-bottom: 15px;
