@@ -181,14 +181,14 @@ a:hover {
     z-index: 10;
     bottom: 12px;
   }
+  header #BannerBox > .RadioBox > input {
+    display: none;
+  }
   header #BannerBox > .RadioBox > .Controls_Visible {
     width: 100%;
     position: absolute;
     text-align: center;
     bottom: 12px;
-  }
-  header #BannerBox > .RadioBox > .Controls_Visible > input {
-    display: none;
   }
   header #BannerBox > .RadioBox > .Controls_Visible > label {
     display: inline-block;
