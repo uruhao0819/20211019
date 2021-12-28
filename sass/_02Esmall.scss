@@ -209,6 +209,14 @@ header {
 				border: 2px solid white;
 			}
 		}
+
+		// 轉換控制按鈕顏色 「~」連結同層元素，形成連動
+		> .RadioBox
+			input[type="radio"]:nth-of-type(1):checked
+			~ .Controls_Visible
+			label:nth-of-type(1) {
+			background-color: rgb(18, 20, 126);
+		}
 	}
 }
 
