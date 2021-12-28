@@ -148,19 +148,19 @@ header {
 		// 單選鈕
 		> .RadioBox {
 			width: $WPer * 10;
-			position: absolute;
-			z-index: 10;
-			bottom: 12px;
+			position: relative;
 
 			> input {
 				// 隱藏
 				@include DN;
+				bottom: 12px;
 			}
 
 			// 控制按鈕
 			> .Controls_Visible {
 				width: $WPer * 10;
 				position: absolute;
+				z-index: 10;
 				text-align: center;
 				bottom: 12px;
 

@@ -177,16 +177,16 @@ a:hover {
   }
   header #BannerBox > .RadioBox {
     width: 100%;
-    position: absolute;
-    z-index: 10;
-    bottom: 12px;
+    position: relative;
   }
   header #BannerBox > .RadioBox > input {
     display: none;
+    bottom: 12px;
   }
   header #BannerBox > .RadioBox > .Controls_Visible {
     width: 100%;
     position: absolute;
+    z-index: 10;
     text-align: center;
     bottom: 12px;
   }
