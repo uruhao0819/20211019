@@ -46,3 +46,18 @@ var z = 2;
 document.write("<br>" + z);
 z = null;
 document.write("<br>" + z);
+
+// NaN無效的數字 轉換類別 1. 字串轉為數字
+var F = "a";
+var f = "123";
+FF = Number(F);
+ff = Number(f);
+
+document.write("<br> F = a &nbsp;" + FF);
+document.write("<br> f = 123 &nbsp;" + ff);
+
+// 2. 無意義的運算 0除以0
+document.write("<br>" + 0/0 );
+
+// Infinity 無限大 被除數(10) / 除數(0) ; 被除數為任意數字 (除了 0 之外) / 除數 (0) = 無限大
+document.write("<br>" + -10/0 );
