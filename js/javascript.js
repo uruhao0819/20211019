@@ -94,8 +94,8 @@ let x=2, Y=0;
     let z= x+Y;
 }
 // 測試可用 控制台 呼叫
-console.log("c=",c);
-console.log("z=",z);
+console.log("c=", c);
+console.log("z=", z);
 
 // var 的全域或區域的作用，只存在 function ( 函數 ) 之內
 // { 區塊敘述 } if、eles、for、while
