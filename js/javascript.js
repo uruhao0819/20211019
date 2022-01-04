@@ -101,7 +101,17 @@ console.log("z=", z);
 // { 區塊敘述 } if、eles、for、while
 // 判斷式 if {} eles {}
 
-document.getElementById('TestBox').textContent="1234";
+// document.getElementById('TestBox').textContent="1234";
 
 // 確認對話框 '提示訊息'
-window.confirm('繼續請按確認，退出請按取消');
+// window.confirm('繼續請按確認，退出請按取消')
+
+// 條件分支 if
+if(window.confirm('繼續請按確認，退出請按取消')) {
+    // 控制台訊息
+    console.log('確定');
+    document.getElementById('TestBox').textContent = "確定";
+}else {
+    console.log('已取消');
+    document.getElementById('TestBox').textContent = "已取消";
+}
