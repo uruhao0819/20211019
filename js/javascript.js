@@ -102,3 +102,6 @@ console.log("z=", z);
 // 判斷式 if {} eles {}
 
 document.getElementById('TestBox').textContent="1234";
+
+// 確認對話框 '提示訊息'
+window.confirm('繼續請按確認，退出請按取消');
