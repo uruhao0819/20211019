@@ -106,12 +106,37 @@ console.log("z=", z);
 // 確認對話框 '提示訊息'
 // window.confirm('繼續請按確認，退出請按取消')
 
-// 條件分支 if
-if(window.confirm('繼續請按確認，退出請按取消')) {
-    // 控制台訊息
-    console.log('確定');
-    document.getElementById('TestBox').textContent = "確定";
-}else {
-    console.log('已取消');
-    document.getElementById('TestBox').textContent = "已取消";
+// 條件分支 if(條件){成立時執行的動作}else{不成立時執行的動作}
+// 如果沒有「不成立」時要執行的動作，可以省略 else 不寫
+// 方法
+function WinCon() {
+    if(window.confirm('繼續請按確認，退出請按取消')) {
+        // 控制台訊息
+        console.log('確定');
+        document.getElementById('TestBox').textContent = "確定";
+    }else {
+        console.log('已取消');
+        document.getElementById('TestBox').textContent = "已取消";
+    }
+}
+
+
+// 輸入對話框 window.prompt('提示訊息')
+
+// window.prompt('請輸入資料');
+
+// 帳密登入邏輯
+// 1. 設定變數，只依靠window.prompt的一個輸入框，故只設定一個變數即可
+// 2. 判斷式 變數值 與 輸入法 比對(==) ; 相同才會顯示資料 ; 比對(==)，只要輸的資料相同即可通過
+login();
+// 方法
+function login() {
+    let Ans = window.prompt('請輸入帳號');
+
+    if( Ans == '1234') {
+        console.log(Ans);
+    }else {
+        Ans = "帳號密碼輸入錯誤 ! "
+        console.log(Ans);
+    }
 }
