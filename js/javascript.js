@@ -187,12 +187,12 @@ ForCode();
 // i = i + 1 原始寫法 i++ ;「++」加法運算子 數字 + 數字 ;「--」減法運算子 數字 - 數字
 function ForCode() {
     let i;
-    for ( i = 1; i <= 10; i++){
+    for ( i = 1; i <= 10; i++) {
         console.log(i);
     }
 
-    let q
-    for ( q = 10; q > 10; q--) {
+    let q;
+    for ( q = 10; q > 0; q--) {
         console.log(q);
         
     }
@@ -204,28 +204,28 @@ function WhileCode() {
     // 總數
     let Number = 100;
     // 亂數 ( 系統產生的亂數，會介於 0 ~ 1 之間 ) ; 每次亂數都要大於 30 小於 40
+    // 亂數求整數值時，需乘以「基數」
     let attack;
     while( Number > 0 ) {
         // 產生亂數 Math.random() -- 0~1
         attack = Math.floor( Math.random() * 41 );
-
-        console.log = attack;
+        console.log('亂數值：'+attack);
 
         if (ackk > 30)
-            Number = Number - attack;
+        Number = Number - attack;
         
-        console.log = Number;
+        console.log('計算結果：' + Number);
     }
 }
 
-let ac = Math.random();
-console.log(ac);
+// let ac = Math.random();
+// console.log(ac);
 
-let ack = Math.random() * 41;
-console.log(ack);
+// let ack = Math.random() * 41;
+// console.log(ack);
 
-let ackk = Math.floor(Math.random() * 41 );
-console.log(ackk);
+// let ackk = Math.floor(Math.random() * 41 );
+// console.log(ackk);
 
-if ( ackk > 30 )
-    console.log(ackk);
+// if ( ackk > 30 )
+//     console.log(ackk);
