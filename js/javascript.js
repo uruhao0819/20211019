@@ -199,7 +199,7 @@ function ForCode() {
 }
 
 // 迴圈 while(條件){執行程式}
-WhileCode();
+// WhileCode();
 function WhileCode() {
     // 總數
     let Number = 100;
@@ -233,3 +233,12 @@ function WhileCode() {
 
 // if ( ackk > 30 )
 //     console.log(ackk);
+
+ArrayCode();
+// 陣列 ['資料','資料'] ; 利用索引編號找值 ; 陣列第一筆資料編號永遠為 0 (除非重新設定)
+function ArrayCode() {
+    let Items =['01',01];
+    for (let i = 0; i < 2; i++) {
+        console.log(Items[i]);
+    }
+}
