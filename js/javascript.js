@@ -1,3 +1,4 @@
+// TestCode();
 function TestCode() {
     document.write("javascript!");
 
@@ -138,7 +139,6 @@ let TestName = document.getElementById('TestBox');
 
 // 呼叫方法
 login();
-
 // 方法
 function login() {
 
@@ -182,7 +182,7 @@ function TimeItem() {
     }
 }
 
-ForCode();
+// ForCode();
 // 迴圈 for (初始化;迴圈的條件;每次執行後的動作){語法}
 // i = i + 1 原始寫法 i++ ;「++」加法運算子 數字 + 數字 ;「--」減法運算子 數字 - 數字
 function ForCode() {
@@ -212,7 +212,11 @@ function WhileCode() {
         console.log('亂數值：'+attack);
 
         if (attack > 30)
-        Number = Number - attack;
+            Number = Number - attack;
+
+        // 小於 0 Number等於0
+        if (Number < 0)
+            Number = 0;
         
         console.log('計算結果：' + Number);
     }
