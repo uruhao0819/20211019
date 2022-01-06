@@ -199,7 +199,7 @@ function ForCode() {
 }
 
 // 迴圈 while(條件){執行程式}
-// WhileCode
+WhileCode();
 function WhileCode() {
     // 總數
     let Number = 100;
@@ -211,7 +211,7 @@ function WhileCode() {
         attack = Math.floor( Math.random() * 41 );
         console.log('亂數值：'+attack);
 
-        if (ackk > 30)
+        if (attack > 30)
         Number = Number - attack;
         
         console.log('計算結果：' + Number);
