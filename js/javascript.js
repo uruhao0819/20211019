@@ -207,7 +207,14 @@ function WhileCode() {
     let attack;
     while( Number > 0 ) {
         // 產生亂數 Math.random() -- 0~1
-        attack = Math.random()
+        attack = Math.floor( Math.random() * 41 );
+
+        console.log = attack;
+
+        if (ackk > 30)
+            Number = Number - attack;
+        
+        console.log = Number;
     }
 }
 
@@ -219,3 +226,6 @@ console.log(ack);
 
 let ackk = Math.floor(Math.random() * 41 );
 console.log(ackk);
+
+if ( ackk > 30 )
+    console.log(ackk);
