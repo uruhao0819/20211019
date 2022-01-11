@@ -11,8 +11,20 @@ function AddArticle() {
     art.setAttribute("id", "Portfolio");
 
     // innerHTML 可寫入純文字，還可以寫入 html 的標籤
-    art.innerHTML = "測試內容";
+    art.innerHTML = "在 Por 元素的開頭";
 
     // 取得 html 標籤 ( 元素 ) 中添加的子元素
     Main.appendChild(art);
+
+    // 1. 在被選取的元素結尾插入內容 append() 置入被選取元素之中
+
+    // 2. 在被選取的元素開頭插入內容 prepend() 置入被選取元素之中
+
+    // 3. 在被選取的元素之後插入內容 after() 置入被選取元素標籤之後
+
+    // 4. 在被選取的元素之前插入內容 before() 置入被選取元素標籤之前
+
+    let Por = document.getElementById("PortfolioBox");
+
+    Por.before(art);
 }
