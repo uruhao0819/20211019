@@ -26,5 +26,5 @@ console.log(a);
 const pi = 3.14;
 
 console.log(pi);
-pi = 2;
+// pi = 2;
 console.log(pi);
