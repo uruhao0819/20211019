@@ -1,4 +1,28 @@
-AddArticle();
+// AddArticle();
+AddArticles();
+function AddArticles() {
+    // 陣列 id
+    let ArtId = ['PortfolioBox', 'AboutBox', 'ProjectBox'];
+
+    // 主要的 article id=main
+    let Main = document.getElementById("main");
+
+    // 產出 3 個標籤
+    for ( let i = 0; i < ArtId.length; i++ ) {
+        // 要新增的標籤 article
+        let art = document.createElement("article");
+
+        // 新增 article 的 id
+        art.setAttribute("id", ArtId[i]);
+
+        // 在框架內新增子元素 main > article
+        Main.appendChild(art);
+
+        // 標籤要在 #ContactBox 之上
+        let Con = document.getElementById("ContactBox");
+        Con.before(art);
+    }
+};
 
 function AddArticle() {
     // 呼叫主要的 article id=main
@@ -34,4 +58,4 @@ function AddArticle() {
     let Por = document.getElementById("PortfolioBox");
 
     Por.before(art);
-}
+};
