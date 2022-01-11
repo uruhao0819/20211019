@@ -11,7 +11,14 @@ function AddArticle() {
     art.setAttribute("id", "Portfolio");
 
     // innerHTML 可寫入純文字，還可以寫入 html 的標籤
-    art.innerHTML = "在 Por 元素的開頭";
+    // art.innerHTML = "<h1>在 Por 元素的開頭</h1>";
+
+    // 在 article 新增 h1
+    let h1 = document.createElement('h1');
+
+    h1.textContent = "作品分享";
+
+    art.appendChild(art);
 
     // 取得 html 標籤 ( 元素 ) 中添加的子元素
     Main.appendChild(art);
@@ -20,9 +27,9 @@ function AddArticle() {
 
     // 2. 在被選取的元素開頭插入內容 prepend() 置入被選取元素之中
 
-    // 3. 在被選取的元素之後插入內容 after() 置入被選取元素標籤之後
+    // 3. 在被選取的元素之前插入內容 before() 置入被選取元素標籤之前
 
-    // 4. 在被選取的元素之前插入內容 before() 置入被選取元素標籤之前
+    // 4. 在被選取的元素之後插入內容 after() 置入被選取元素標籤之後
 
     let Por = document.getElementById("PortfolioBox");
 
