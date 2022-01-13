@@ -92,10 +92,21 @@ header {
 			margin: {
 				top: 20px;
 			}
+
 			> a {
 				color: white;
 				font-size: $Trem * 1.7;
 			}
+		}
+
+		> .Close {
+			width: $WPer * 1.5;
+			font-size: $Trem * 1.3;
+			color: sandybrown;
+			font-weight: 600;
+			margin-right: $WPer * 0.5;
+			text-align: right;
+			background-color: seagreen;
 		}
 	}
 
