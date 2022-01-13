@@ -34,6 +34,11 @@ $('#Menu').click( function(){
     $('#MobileNav').show();
 });
 
+// 3. 點擊 Close 關閉 MobileNav 區塊
+$('.Close').click( function(){
+    $('#MobileNav').hide();
+});
+
 function AddArticle() {
     // 呼叫主要的 article id=main
     let Main = document.getElementById('main');

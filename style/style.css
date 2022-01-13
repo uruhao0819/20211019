@@ -132,6 +132,7 @@ a {
     position: absolute;
     z-index: 9999;
     position: fixed;
+    top: 0;
     color: white;
     background-color: #b4566e;
   }
