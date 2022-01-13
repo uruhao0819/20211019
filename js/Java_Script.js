@@ -26,6 +26,13 @@ function AddArticles() {
 
 // jQuery 語法
 // 行動裝置選單按鈕，開啟與關閉
+// 1. 隱藏 MobileNav 區塊
+$('#MobileNav').hide();
+
+// 2. 點擊按鈕 Menu 開啟 MobileNav 區塊
+$('#Menu').click( function(){
+    $('#MobileNav').show();
+});
 
 function AddArticle() {
     // 呼叫主要的 article id=main
