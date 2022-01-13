@@ -24,6 +24,9 @@ function AddArticles() {
     }
 };
 
+// jQuery 語法
+// 行動裝置選單按鈕，開啟與關閉
+
 function AddArticle() {
     // 呼叫主要的 article id=main
     let Main = document.getElementById('main');

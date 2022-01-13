@@ -31,12 +31,6 @@ img {
 
 a {
   text-decoration: none;
-  color: brown;
-}
-
-a:hover {
-  color: cadetblue;
-  font-weight: 650;
 }
 
 @-webkit-keyframes move {
@@ -133,12 +127,21 @@ a:hover {
     display: none;
   }
   header #MobileNav {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: absolute;
     z-index: 9999;
-    display: none;
+    position: fixed;
+    color: white;
     background-color: #b4566e;
+  }
+  header #MobileNav > li {
+    width: 85%;
+    margin-top: 20px;
+  }
+  header #MobileNav > li > a {
+    color: white;
+    font-size: 1.7rem;
   }
   header #BannerBox {
     width: 100vw;
@@ -441,12 +444,20 @@ a:hover {
     display: none;
   }
   header #MobileNav {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: absolute;
     z-index: 10;
-    display: none;
+    position: fixed;
     background-color: #b4566e;
+  }
+  header #MobileNav > li {
+    width: 75%;
+    margin-top: 35px;
+  }
+  header #MobileNav > li > a {
+    color: white;
+    font-size: 1.5rem;
   }
   header #BannerBox {
     width: 100vw;
@@ -477,9 +488,11 @@ a:hover {
   }
   header #BannerBox > .Arrow > .Larrow {
     left: 10px;
+    margin-right: 12px;
   }
   header #BannerBox > .Arrow > .Rarrow {
     right: 10px;
+    margin-right: 12px;
   }
   header #BannerBox > .RadioBox {
     width: 100%;

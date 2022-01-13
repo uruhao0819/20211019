@@ -63,14 +63,27 @@ header {
 
 	// 手機板的導覽列
 	#MobileNav {
-		width: $W1 * 10;
+		width: $WPer * 10;
 		// 高度單位 vh (裝置可視高度)
 		height: 100vh;
 		// 定位點 絕對定位 設定階層
 		position: absolute;
 		z-index: 10;
-		display: none;
+		// display: none;
+		position: fixed;
 		background-color: rgb(180, 86, 110);
+
+		> li {
+			width: $WPer * 7.5;
+			margin: {
+				top: 35px;
+			}
+
+			> a {
+				color: white;
+				font-size: $Trem * 1.5;
+			}
+		}
 	}
 
 	// 輪播圖片 超小與小裝置 100% X 280px ( 圖片以大尺寸 1920 x600 為基礎計算 )
@@ -123,11 +136,13 @@ header {
 			> .Larrow {
 				// 外間距靠左
 				left: 10px;
+				margin-right: 12px;
 			}
 
 			> .Rarrow {
 				// 外間距靠右
 				right: 10px;
+				margin-right: 12px;
 			}
 		}
 
