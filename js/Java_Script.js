@@ -58,11 +58,12 @@ $('.Close').click( function(){
 function TopBtn() {
     // 宣告變數 指向 Top 之下 a 標籤
     let Top = $('#Top');
+    let Topa = $('#Top > a');
     // 隱藏按鈕
     Top.hide();
 
     // 設定按鈕行為
-    Top.click( function() {
+    Topa.click( function() {
         // 執行的動畫 : 當點擊按鈕時，畫面捲動到網頁最上方，加上滑動的秒數
         $('html, boy').animate({scrollTop:0}, 0.333);
     });
