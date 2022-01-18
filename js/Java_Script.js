@@ -3,6 +3,9 @@ AddArticles();
 function AddArticles() {
     // 陣列 id
     let ArtId = ['PortfolioBox', 'AboutBox', 'ProjectBox'];
+    let ArtH1 = ['PortfolioTitle','AboutTitle','ProjectTitle'];
+    let ArtH1Con =['作品介紹','自我介紹','服務項目'];
+    let ArtH1PorDiv = ['MGraphic','MWeb','MAudio'];
 
     // 主要的 article id=main
     let Main = document.getElementById("main");
@@ -11,18 +14,40 @@ function AddArticles() {
     for ( let i = 0; i < ArtId.length; i++ ) {
         // 要新增的標籤 article
         let art = document.createElement("article");
+        let h1 = document.createElement("h1");
 
         // 新增 article 的 id
         art.setAttribute("id", ArtId[i]);
+        h1.setAttribute("class", ArtId[i]);
 
         // 在框架內新增子元素 main > article
         Main.appendChild(art);
+        art.appendChild(h1);
 
         // 標籤要在 #ContactBox 之上
         let Con = document.getElementById("ContactBox");
         Con.before(art);
+
+        // 置入文字
+        h1.innerHTML = ArtH1Con[i];
     }
+
+    let Por = document.getElementById("PortfolioBox");
+
+        for ( let i = 0; i < ArtH1PorDiv.length; i++ ) {
+            let div = document.createElement("div");
+
+            div.setAttribute("id", ArtH1PorDiv[i]);
+
+            Por.appendChild(div);
+
+            div.innerHTML = ArtH1PorDivH1[i];
+        }
+    
+    // $('PortfolioBox').load('../webs/graphic.html');
 };
+
+$('PortfolioBox').load('../webs/graphic.html');
 
 // jQuery 語法
 // 行動裝置選單按鈕，開啟與關閉
