@@ -5,7 +5,6 @@ function AddArticles() {
     let ArtId = ['PortfolioBox', 'AboutBox', 'ProjectBox'];
     let ArtH1 = ['PortfolioTitle','AboutTitle','ProjectTitle'];
     let ArtH1Con =['作品介紹','自我介紹','服務項目'];
-    let ArtH1PorDiv = ['MGraphic','MWeb','MAudio'];
 
     // 主要的 article id=main
     let Main = document.getElementById("main");
@@ -31,18 +30,6 @@ function AddArticles() {
         // 置入文字
         h1.innerHTML = ArtH1Con[i];
     }
-
-    let Por = document.getElementById("PortfolioBox");
-
-        for ( let i = 0; i < ArtH1PorDiv.length; i++ ) {
-            let div = document.createElement("div");
-
-            div.setAttribute("id", ArtH1PorDiv[i]);
-
-            Por.appendChild(div);
-
-            div.innerHTML = ArtH1PorDivH1[i];
-        }
     
     // 將網頁資料，用載入的方式置入框架中
     $('PortfolioBox').load('../webs/graphic.html');
