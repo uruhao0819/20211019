@@ -44,10 +44,9 @@ function AddArticles() {
             div.innerHTML = ArtH1PorDivH1[i];
         }
     
-    // $('PortfolioBox').load('../webs/graphic.html');
+    // 將網頁資料，用載入的方式置入框架中
+    $('PortfolioBox').load('../webs/graphic.html');
 };
-
-$('PortfolioBox').load('../webs/graphic.html');
 
 // jQuery 語法
 // 行動裝置選單按鈕，開啟與關閉
