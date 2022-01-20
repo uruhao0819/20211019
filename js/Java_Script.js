@@ -95,11 +95,12 @@ function BannerChang() {
     let P05 = document.getElementById('P05');
     let Images = document.getElementById('Images');
     let AllButton = $('#AllButtons > label');
+    let AllLeng = AllButton.length;
 
     AllButtons();
     function AllButtons() {
 
-        // 迴圈
+        // 迴圈 新增按鈕
         for ( let i = 0; i < AllButton.length; i++ ) {
             // 按鈕執行
             $(AllButton[i]).click( function(ev) {
@@ -115,6 +116,22 @@ function BannerChang() {
                 });
             });
         }
+    }
+
+    AutoChang();
+
+    // 自動輪播
+    function AutoChang() {
+        // 宣告計時器變數 找到要切換的第 n 個 button
+        let n = 0;
+
+        // 重複執行一個函數或是一段代碼，每次調用之間具有固定時間延遲 setInterval()
+        // => 箭頭函式
+        setInterval( () => {
+            n++;
+            // eq() 遍歷方法 找出第 n % AllLeng
+            AllButton.eq(n%AllLeng).trigger('click').addClass('blue').siblinds('blue').removeClass('blue');
+        }, 3000 );
     }
 
     function Buttons() {
