@@ -240,33 +240,33 @@ header {
 				transform: translateX(0vw);
 			}
 
-			> input[type="radio"]:nth-of-type(2):checked
-				~ .ImgBox
-				> a
-				> .SmallImg {
-				transform: translateX(-100vw);
-			}
+			// > input[type="radio"]:nth-of-type(2):checked
+			// 	~ .ImgBox
+			// 	> a
+			// 	> .SmallImg {
+			// 	transform: translateX(-100vw);
+			// }
 
-			> input[type="radio"]:nth-of-type(3):checked
-				~ .ImgBox
-				> a
-				> .SmallImg {
-				transform: translateX(-200vw);
-			}
+			// > input[type="radio"]:nth-of-type(3):checked
+			// 	~ .ImgBox
+			// 	> a
+			// 	> .SmallImg {
+			// 	transform: translateX(-200vw);
+			// }
 
-			> input[type="radio"]:nth-of-type(4):checked
-				~ .ImgBox
-				> a
-				> .SmallImg {
-				transform: translateX(-300vw);
-			}
+			// > input[type="radio"]:nth-of-type(4):checked
+			// 	~ .ImgBox
+			// 	> a
+			// 	> .SmallImg {
+			// 	transform: translateX(-300vw);
+			// }
 
-			> input[type="radio"]:nth-of-type(5):checked
-				~ .ImgBox
-				> a
-				> .SmallImg {
-				transform: translateX(-400vw);
-			}
+			// > input[type="radio"]:nth-of-type(5):checked
+			// 	~ .ImgBox
+			// 	> a
+			// 	> .SmallImg {
+			// 	transform: translateX(-400vw);
+			// }
 
 			.ImgBox {
 				// 圖片框的寬度尺寸
@@ -277,7 +277,7 @@ header {
 					width: 100vw;
 					float: left;
 					// 切換動畫 滑動的速度
-					transition: transform 2s;
+					// transition: transform 2s;
 				}
 			}
 		}
