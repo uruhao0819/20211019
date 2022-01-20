@@ -136,6 +136,16 @@ function BannerChang() {
             // removeClass( 類別class名稱 )移除 class 名稱
             AllButton.eq(n%AllLeng).trigger('click').addClass('blue').siblings('blue').removeClass('blue');
         }, 3000 );
+
+        // // 滑鼠移入圖片，清除計時器 (停止)
+        // $('window').on('mouseenter', function() {
+        //     window.clearInterval( TimerId );
+        // });
+
+        // // 滑鼠移出圖片，恢復計時
+        // $('window').on('mouseleave', function() {
+            
+        // });
     }
 
     function Buttons() {
