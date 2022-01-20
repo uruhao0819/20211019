@@ -249,6 +249,10 @@ a {
   header #BannerBox > .RadioBox .ImgBox .SmallImg {
     width: 100vw;
     float: left;
+    -webkit-transition: -webkit-transform 2s;
+    transition: -webkit-transform 2s;
+    transition: transform 2s;
+    transition: transform 2s, -webkit-transform 2s;
   }
   footer .HRLine {
     margin-bottom: 15px;

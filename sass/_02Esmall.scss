@@ -276,6 +276,8 @@ header {
 				.SmallImg {
 					width: 100vw;
 					float: left;
+					// 切換動畫 滑動的速度
+					transition: transform 2s;
 				}
 			}
 		}
