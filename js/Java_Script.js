@@ -129,7 +129,11 @@ function BannerChang() {
         // => 箭頭函式
         setInterval( ( ) => {
             n++;
-            // eq() 遍歷方法 找出第 n % AllLeng
+            // eq() 遍歷方法 - 返回帶有被選元素的指定索引號的元素 找出第 n % AllLeng
+            // trigger( 事件類型 )觸發被選元素的指定事件類型 例如 : click submit (送出)
+            // addClass( 類別class名稱 )元素添加一個或多個類別
+            // siblinds( 類別或ID名稱 )匹配集合中每個元素的同胞
+            // removeClass( 類別class名稱 )移除 class 名稱
             AllButton.eq(n%AllLeng).trigger('click').addClass('blue').siblinds('blue').removeClass('blue');
         }, 3000 );
     }
