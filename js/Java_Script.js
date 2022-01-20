@@ -127,7 +127,7 @@ function BannerChang() {
 
         // 重複執行一個函數或是一段代碼，每次調用之間具有固定時間延遲 setInterval()
         // => 箭頭函式
-        setInterval( () => {
+        setInterval( ( ) => {
             n++;
             // eq() 遍歷方法 找出第 n % AllLeng
             AllButton.eq(n%AllLeng).trigger('click').addClass('blue').siblinds('blue').removeClass('blue');
