@@ -1,5 +1,7 @@
 // 迴圈 寫入 html 畫面
 AddArticle();
+TopBtn();
+BannerChang();
 
 function AddArticle() {
     // 陣列 id
@@ -55,8 +57,6 @@ $('.Close').click( function(){
     $('#MobileNav').hide();
 });
 
-TopBtn();
-
 // 控制 Top 按鈕
 function TopBtn() {
     // 宣告變數 指向 Top 之下 a 標籤
@@ -82,8 +82,6 @@ function TopBtn() {
         }
     });
 };
-
-BannerChang();
 
 // 控制 Banner
 function BannerChang() {
@@ -117,7 +115,7 @@ function BannerChang() {
 
                 // 將 label 索引值給予 n
                 let n = index;
-                 
+                AllButton.eq(n);
             });
         }
     }
