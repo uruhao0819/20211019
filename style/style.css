@@ -303,7 +303,7 @@ a {
     background-color: coral;
   }
   #main > #PortfolioBox {
-    background-color: wheat;
+    margin-bottom: 30px;
   }
   #main > #PortfolioBox > h1 {
     width: 90vw;
@@ -313,6 +313,7 @@ a {
     padding-bottom: 10px;
     color: #770e0e;
     border-bottom: 1px solid #770e0e;
+    margin-bottom: 30px;
   }
   #main > #AboutBox {
     background-image: url(../../images/bg/w_gu014.gif);

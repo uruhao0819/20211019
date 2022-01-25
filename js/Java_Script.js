@@ -138,12 +138,12 @@ function BannerChang() {
         AllButton.eq(n % AllLeng).trigger('click').addClass('blue').siblings('blue').removeClass('blue');
     },  3000 );
 
-    // // 滑鼠移入圖片，清除計時器 (停止)
+    // 滑鼠移入圖片，清除計時器 (停止)
     $('#BannerBox').on('mouseenter', function() {
-        Window.clearInterval(Timer);
+        window.clearInterval(Timer);
     });
 
-    // // 滑鼠移出圖片，恢復計時
+    // 滑鼠移出圖片，恢復計時
     $('#BannerBox').on('mouseleave', function() {
         Timer = setInterval( ( ) => {
             n++;

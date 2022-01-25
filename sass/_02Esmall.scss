@@ -353,7 +353,7 @@ footer {
 
 #main {
 	> #PortfolioBox {
-		background-color: wheat;
+		margin-bottom: 30px;
 		> h1 {
 			width: $W1 * 9;
 			text-align: center;
@@ -363,8 +363,10 @@ footer {
 				bottom: 10px;
 			}
 			color: rgb(119, 14, 14);
-
 			border-bottom: 1px solid rgb(119, 14, 14);
+			margin: {
+				bottom: 30px;
+			}
 		}
 	}
 
