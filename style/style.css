@@ -302,11 +302,17 @@ a {
     font-weight: 200;
     background-color: coral;
   }
+  #main > #PortfolioBox {
+    background-color: wheat;
+  }
   #main > #PortfolioBox > h1 {
+    width: 90vw;
     text-align: center;
     font-size: 2rem;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: #770e0e;
+    border-bottom: 1px solid #770e0e;
   }
   #main > #AboutBox {
     background-image: url(../../images/bg/w_gu014.gif);
@@ -316,6 +322,10 @@ a {
     font-size: 2rem;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: #360707;
+  }
+  #main > #ProjectBox {
+    color: #770e0e;
   }
   #main > #ProjectBox > h1 {
     text-align: center;
