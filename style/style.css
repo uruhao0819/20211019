@@ -308,12 +308,30 @@ a {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  #main > #AboutBox {
+    background-image: url(../../images/bg/w_gu014.gif);
+  }
+  #main > #AboutBox > h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #main > #ProjectBox > h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   #main #ContactBox {
     background-image: url(../../images/bg/w_gu014.gif);
   }
   #main #ContactBox #ContactTitle {
+    text-align: center;
+    font-size: 2rem;
     padding-top: 15px;
     padding-bottom: 15px;
+    color: #360707;
   }
   #main #ContactBox form {
     width: 80vw;
@@ -616,6 +634,27 @@ a {
     font-size: 0.8rem;
     font-weight: 200;
     background-color: coral;
+  }
+  #main > #PortfolioBox > h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #main > #AboutBox {
+    background-image: url(../../images/bg/w_gu014.gif);
+  }
+  #main > #AboutBox > h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #main > #ProjectBox > h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   #main #ContactBox {
     background-image: url(../../images/bg/w_gu014.gif);
