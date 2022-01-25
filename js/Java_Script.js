@@ -114,6 +114,10 @@ function BannerChang() {
                     transform: 'translateX(' + npx + 'vw)',
                     transition: 'transform 1s'
                 });
+
+                // 將 label 索引值給予 n
+                let n = index;
+                 
             });
         }
     }
