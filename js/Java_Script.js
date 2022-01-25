@@ -38,6 +38,7 @@ function AddArticle() {
     
     // 將網頁資料，用載入的方式置入框架中
     $('.PorCon').load('../webs/graphic.html');
+    $('.AboCon').load('../webs/about.html');
 };
 
 // jQuery 語法

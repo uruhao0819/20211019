@@ -537,6 +537,7 @@ a {
     height: 120px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
   }
   header #BannerBox > .Arrow > .Larrow {
     left: 10px;
@@ -785,6 +786,7 @@ a {
     margin-top: -70px;
   }
   header #BannerBox > .Arrow > .arrow {
+    width: 2.5%;
     height: 140px;
   }
 }
