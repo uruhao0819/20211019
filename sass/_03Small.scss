@@ -33,7 +33,15 @@ header {
 			text-indent: 30px;
 			// 文字水平置中，行距設定 ( 父框架的高度 = 行距的數值 ) line-height: 80* 0.15 + px;
 			line-height: $NH;
-			// background-color: rgb(100, 93, 83);
+
+			text-indent: -999px;
+
+			> a {
+				width: $W1 * 9;
+				line-height: $NH;
+				display: block;
+				@include BG(icon, "logo.png", contain);
+			}
 		}
 		// 選單
 		#Menu {

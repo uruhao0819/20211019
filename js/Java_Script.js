@@ -1,7 +1,5 @@
 // 迴圈 寫入 html 畫面
 AddArticle();
-TopBtn();
-BannerChang();
 
 function AddArticle() {
     // 陣列 id
@@ -57,6 +55,8 @@ $('.Close').click( function(){
     $('#MobileNav').hide();
 });
 
+TopBtn();
+
 // 控制 Top 按鈕
 function TopBtn() {
     // 宣告變數 指向 Top 之下 a 標籤
@@ -82,6 +82,8 @@ function TopBtn() {
         }
     });
 };
+
+BannerChang();
 
 // 控制 Banner
 function BannerChang() {
@@ -126,7 +128,7 @@ function BannerChang() {
 
     // 重複執行一個函數或是一段代碼，每次調用之間具有固定時間延遲 setlnterval()
     // => 箭頭函式
-    let Timer = setlnterval( ( ) => {
+    let Timer = setInterval( ( ) => {
         n++;
         // eq() 遍歷方法 - 返回帶有被選元素的指定索引號的元素 找出第 n % AllLeng
         // trigger( 事件類型 )觸發被選元素的指定事件類型 例如 : click submit (送出)
@@ -138,12 +140,12 @@ function BannerChang() {
 
     // // 滑鼠移入圖片，清除計時器 (停止)
     $('#BannerBox').on('mouseenter', function() {
-        Window.clearlnterval(Timer);
+        Window.clearInterval(Timer);
     });
 
     // // 滑鼠移出圖片，恢復計時
     $('#BannerBox').on('mouseleave', function() {
-        Timer = setlnterval( ( ) => {
+        Timer = setInterval( ( ) => {
             n++;
             AllButton.eq(n%AllLeng).trigger('click').addClass('blue').siblings('blue').removeClass('blue');
         },  3000 );

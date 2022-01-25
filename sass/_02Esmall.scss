@@ -44,6 +44,14 @@ header {
 			background-color: rgb(100, 93, 83);
 			// 對齊方式 置中
 			text-align: center;
+			text-indent: -999px;
+
+			> a {
+				width: $W1 * 9;
+				line-height: $NH;
+				display: block;
+				@include BG(icon, "logo.png", contain);
+			}
 		}
 		// 選單
 		#Menu {
