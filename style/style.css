@@ -325,6 +325,10 @@ a {
     padding-bottom: 10px;
     color: #360707;
   }
+  #main > #AboutBox > .AboCon {
+    width: 90%;
+    padding-bottom: 15px;
+  }
   #main > #ProjectBox {
     color: #770e0e;
   }
