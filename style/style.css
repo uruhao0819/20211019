@@ -375,11 +375,14 @@ a {
     background-image: url(../../images/bg/w_gu014.gif);
   }
   #main #ContactBox #ContactTitle {
+    width: 90%;
     text-align: center;
     font-size: 2rem;
     padding-top: 15px;
     padding-bottom: 15px;
     color: #360707;
+    border-bottom: 1px solid #360707;
+    margin-bottom: 30px;
   }
   #main #ContactBox form {
     width: 80vw;
@@ -870,12 +873,22 @@ a {
     display: block;
     position: absolute;
     z-index: 20;
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     background-color: wheat;
     position: fixed;
     bottom: 50px;
     right: 0;
+  }
+  #Top > a {
+    width: 90px;
+    height: 90px;
+    display: block;
+    background-image: url(../../images/icon/35559281-.webp);
+    text-indent: -99999px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   header nav {
     width: 100vw;

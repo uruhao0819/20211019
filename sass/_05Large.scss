@@ -3,13 +3,24 @@
 	// 浮動
 	position: absolute;
 	z-index: 20;
-	width: 60px;
-	height: 60px;
+	// width: 60px;
+	// height: 60px;
+	width: 90px;
+	height: 90px;
 	background-color: wheat;
 	// 停留在畫面下方
 	position: fixed;
 	bottom: 50px;
 	right: 0;
+
+	> a {
+		width: 90px;
+		height: 90px;
+		// 上間距
+		// margin-top: 15px;
+		display: block;
+		@include BG(icon, "35559281-.webp", contain);
+	}
 }
 
 header {
