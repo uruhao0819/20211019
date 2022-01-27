@@ -700,7 +700,7 @@ a {
     color: #360707;
   }
   #main > #AboutBox > .AboCon {
-    width: 90%;
+    width: 80%;
     padding-bottom: 15px;
     text-align: justify;
     font-size: 1.3rem;
@@ -986,8 +986,71 @@ a {
     font-weight: 200;
     background-color: coral;
   }
-  #main article {
-    height: 1650px;
+  #main > #PortfolioBox {
+    margin-bottom: 30px;
+  }
+  #main > #PortfolioBox > h1 {
+    width: 90vw;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #770e0e;
+    border-bottom: 1px solid #770e0e;
+    margin-bottom: 30px;
+  }
+  #main > #AboutBox {
+    background-image: url(../../images/bg/w_gu014.gif);
+  }
+  #main > #AboutBox > h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #360707;
+  }
+  #main > #AboutBox > .AboCon {
+    width: 50%;
+    padding-bottom: 15px;
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 29px;
+  }
+  #main > #AboutBox > .AboCon > div > p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #main > #AboutBox > .AboCon > div > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main > #AboutBox > .AboCon > div > ul > li {
+    width: 22%;
+  }
+  #main > #AboutBox > .AboCon > div > .TextCon {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #main > #AboutBox > .AboCon > div > .TextCon div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #main > #AboutBox > .AboCon > div > .TextCon h5 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #992900;
+  }
+  #main > #ProjectBox {
+    color: #770e0e;
+  }
+  #main > #ProjectBox > h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   #main #ContactBox {
     background-image: url(../../images/bg/w_gu014.gif);
