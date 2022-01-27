@@ -150,7 +150,7 @@
                 <!-- 必填 required ; 指定最多能輸入多少字 maxlength ; 指定最少需要輸入多少字 minlength -->
                 <div id="NameBox">
                     <label for="UserName">姓名</label>
-                    <input type="text" name="" id="UserName" placeholder="請輸入中文姓名" required minlength="3" maxlength="6">
+                    <input type="text" name="Name" id="UserName" placeholder="請輸入中文姓名" required minlength="3" maxlength="6">
                 </div>
 
                 <div class="Mail">
@@ -167,7 +167,7 @@
                     <label for="E_mail2">
                         電子信箱
                         <!-- 單行文字，讓使用者自行輸入帳號 ; @ 固定出現 ; 信箱 gmail.com or yahoo.com.tw 等等，用 下拉式選單 讓使用者挑選 -->
-                        <input type="text" name="" id="E_mail2" required placeholder="輸入信箱名稱">
+                        <input type="text" name="E_mail2" id="E_mail2" required placeholder="輸入信箱名稱">
                         <!-- 行內標籤 span 不換行，用來強調或是突顯單獨的顏色 -->
                         <span>@</span>
                         <select name="" id="">
@@ -200,7 +200,7 @@
                 <div class="TextArea">
                     <li><label for="TextArea">詳細內容</label></li>
 
-                    <textarea name="" id="TextArea" cols="30" rows="10" placeholder="請輸入問題內容，限制100個字，最少10個字" maxlength="100"
+                    <textarea name="Content" id="TextArea" cols="30" rows="10" placeholder="請輸入問題內容，限制100個字，最少10個字" maxlength="100"
                         minlength="10"></textarea>
                 </div>
 
