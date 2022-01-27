@@ -332,6 +332,10 @@ a {
     font-size: 1.3rem;
     line-height: 25.8px;
   }
+  #main > #AboutBox > .AboCon > div > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   #main > #AboutBox > .AboCon > div > ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -344,6 +348,9 @@ a {
   }
   #main > #AboutBox > .AboCon > div > ul > full {
     width: 94%;
+  }
+  #main > #AboutBox > .AboCon > div > div {
+    margin-bottom: 10px;
   }
   #main > #ProjectBox {
     color: #770e0e;

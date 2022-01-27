@@ -392,6 +392,12 @@ footer {
 
 			> div {
 				// about內容
+				> p {
+					margin: {
+						top: 10px;
+						bottom: 10px;
+					}
+				}
 				> ul {
 					// 彈性佈局
 					display: flex;
@@ -402,6 +408,16 @@ footer {
 					}
 					> full {
 						width: 94%;
+					}
+				}
+				> div {
+					margin: {
+						bottom: 10px;
+					}
+
+					> .Rwd {
+						> h5 {
+						}
 					}
 				}
 			}
