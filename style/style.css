@@ -332,6 +332,19 @@ a {
     font-size: 1.3rem;
     line-height: 25.8px;
   }
+  #main > #AboutBox > .AboCon > div > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main > #AboutBox > .AboCon > div > ul > li {
+    width: 47%;
+  }
+  #main > #AboutBox > .AboCon > div > ul > full {
+    width: 100%;
+  }
   #main > #ProjectBox {
     color: #770e0e;
   }
