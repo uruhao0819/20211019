@@ -215,8 +215,16 @@ footer {
 						top: 10px;
 						bottom: 10px;
 					}
+					display: flex;
+					flex-wrap: wrap;
+
+					p {
+						width: 100%;
+					}
 
 					div {
+						// width: $WPer * 10 / 3 - 3%;
+						width: $WPer * 10 / 4;
 						margin: {
 							top: 10px;
 							bottom: 10px;
