@@ -17,6 +17,22 @@
 <body>
     <div id="TestBox" style="background-color: burlywood;width: 100%;">
 
+        <!-- label沒有換行功能 ; 目前樣式無法控制 label 標籤，故用 li 作為外框 -->
+        <div class="E_mail2">
+            <label for="E_mail2">
+                電子信箱
+                <!-- 單行文字，讓使用者自行輸入帳號 ; @ 固定出現 ; 信箱 gmail.com or yahoo.com.tw 等等，用 下拉式選單 讓使用者挑選 -->
+                <input type="text" name="EMail" id="E_mail2" required placeholder="輸入信箱名稱">
+                <!-- 行內標籤 span 不換行，用來強調或是突顯單獨的顏色 -->
+                <span>@</span>
+                <select name="" id="">
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="yahoo.com.tw">yahoo.com.tw</option>
+                    <option value="hotmail.com">hotmail.com</option>
+                </select>
+            </label>
+        </div>
+
     </div>
     <!-- 外連 javascript -->
     <script src="js/javascript.js"></script>
