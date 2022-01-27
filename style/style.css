@@ -349,8 +349,18 @@ a {
   #main > #AboutBox > .AboCon > div > ul > full {
     width: 94%;
   }
-  #main > #AboutBox > .AboCon > div > div {
+  #main > #AboutBox > .AboCon > div > .TextCon {
+    margin-top: 10px;
     margin-bottom: 10px;
+  }
+  #main > #AboutBox > .AboCon > div > .TextCon div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #main > #AboutBox > .AboCon > div > .TextCon h5 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #992900;
   }
   #main > #ProjectBox {
     color: #770e0e;
@@ -687,6 +697,44 @@ a {
     font-size: 2rem;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: #360707;
+  }
+  #main > #AboutBox > .AboCon {
+    width: 90%;
+    padding-bottom: 15px;
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 25.8px;
+  }
+  #main > #AboutBox > .AboCon > div > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #main > #AboutBox > .AboCon > div > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main > #AboutBox > .AboCon > div > ul > li {
+    width: 47%;
+  }
+  #main > #AboutBox > .AboCon > div > ul > full {
+    width: 94%;
+  }
+  #main > #AboutBox > .AboCon > div > .TextCon {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #main > #AboutBox > .AboCon > div > .TextCon div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #main > #AboutBox > .AboCon > div > .TextCon h5 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #992900;
   }
   #main > #ProjectBox > h1 {
     text-align: center;

@@ -410,14 +410,23 @@ footer {
 						width: 94%;
 					}
 				}
-				> div {
+				> .TextCon {
 					margin: {
+						top: 10px;
 						bottom: 10px;
 					}
 
-					> .Rwd {
-						> h5 {
+					div {
+						margin: {
+							top: 10px;
+							bottom: 10px;
 						}
+					}
+
+					h5 {
+						font-size: $Trem * 1.4;
+						text-align: center;
+						color: rgb(153, 41, 0);
 					}
 				}
 			}

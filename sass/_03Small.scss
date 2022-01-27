@@ -354,6 +354,57 @@ footer {
 				top: 10px;
 				bottom: 10px;
 			}
+			color: rgb(54, 7, 7);
+		}
+		> .AboCon {
+			width: 90%;
+			padding-bottom: 15px;
+			// 文字尺寸與對齊方式 行距
+			text-align: justify;
+			font-size: $Trem * 1.3;
+			// 行距 同單位加減
+			line-height: $Tpx * 1.3 + 5px;
+
+			> div {
+				// about內容
+				> p {
+					margin: {
+						top: 10px;
+						bottom: 10px;
+					}
+				}
+				> ul {
+					// 彈性佈局
+					display: flex;
+					// 換行
+					flex-wrap: wrap;
+					> li {
+						width: 47%;
+					}
+					> full {
+						width: 94%;
+					}
+				}
+				> .TextCon {
+					margin: {
+						top: 10px;
+						bottom: 10px;
+					}
+
+					div {
+						margin: {
+							top: 10px;
+							bottom: 10px;
+						}
+					}
+
+					h5 {
+						font-size: $Trem * 1.4;
+						text-align: center;
+						color: rgb(153, 41, 0);
+					}
+				}
+			}
 		}
 	}
 
