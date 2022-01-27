@@ -19,7 +19,7 @@
             <!-- 清單 -->
             <li id="Logo">
                 <!-- 連結 a 商標連結首頁 -->
-                <a href="index.html">LOGO工作室</a>
+                <a href="index.html">品皓工作室</a>
             </li>
             <li id="Portfolio">
                 <a href="#PortfolioBox">作品介紹</a>
@@ -141,7 +141,7 @@
             <h1 id="ContactTitle">聯絡表單</h1>
             <!-- 表單 form ，實際用途是傳輸資料用，將資料寫入資料庫或由資料庫讀出修改 -->
             <!-- get傳輸不重要的資料，資料會顯示在網址上 ; post傳輸重要的資料，直接加密方式傳送 -->
-            <form action="mailto:jay98011@yahoo.com.tw" method="post">
+            <form action="mailto:jay98011@yahoo.com.tw?subject=詢問品皓" method="post">
                 <!-- 姓名 電子信箱 問題 詳細內容 送出 重新輸入 -->
                 <!-- label 可以直接呼叫 input ; for 與 id 相同設定 -->
                 <!-- name 欄位名稱，對應資料庫的欄位名稱 ; 命名，不能用中文，開頭不能為數字 -->
@@ -150,7 +150,7 @@
                 <!-- 必填 required ; 指定最多能輸入多少字 maxlength ; 指定最少需要輸入多少字 minlength -->
                 <div id="NameBox">
                     <label for="UserName">姓名</label>
-                    <input type="text" name="Name" id="UserName" placeholder="請輸入中文姓名" required minlength="3" maxlength="6">
+                    <input type="text" name="姓名" id="UserName" placeholder="請輸入中文姓名" required minlength="3" maxlength="6">
                 </div>
 
                 <div class="Mail">
