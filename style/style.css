@@ -328,6 +328,9 @@ a {
   #main > #AboutBox > .AboCon {
     width: 90%;
     padding-bottom: 15px;
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 25.8px;
   }
   #main > #ProjectBox {
     color: #770e0e;
